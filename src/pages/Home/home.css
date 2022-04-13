@@ -28,8 +28,7 @@
   }
   
   .featured-card-size {
-    width: 15rem;
-    /* height: 15rem; */
+    width: 20rem;
     object-fit: cover;
   }
   

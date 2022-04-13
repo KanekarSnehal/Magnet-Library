@@ -25,8 +25,6 @@ export const Home = () => {
         <Categories />
 
         <div className="spacer-3rem "></div>
-        <div className="spacer-3rem "></div>
-        {/* <Brands /> */}
       </div>
     </main>
   );

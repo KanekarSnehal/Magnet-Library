@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="header-container">
       <Link to="/" className="logo-container">
         <img src="icon.png" alt="logo" className="brand-logo" />
-        <span className="brand-name">Magnet Library </span>
+        <span className="brand-name ">Magnet Library </span>
       </Link>
       <div className="header-links mx-auto">
         <ul className="list-style-none inline-list">

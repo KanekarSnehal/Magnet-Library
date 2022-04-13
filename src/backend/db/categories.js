@@ -8,44 +8,44 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Music",
     imageUrl:
       "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "TED",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649852401/magnet%20library/ted_xqnhhc.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Learning",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649852700/magnet%20library/learning_goxgkh.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Motivation",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649852936/magnet%20library/motivation_bpfcdq.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Stocks",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649853023/magnet%20library/stocks_smgetv.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Webseries",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649853186/magnet%20library/webseries_nmmumw.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Indie",
+    categoryName: "Comedies",
     imageUrl:
-      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649853322/magnet%20library/comdey_fhpyak.jpg",
   },
 ];

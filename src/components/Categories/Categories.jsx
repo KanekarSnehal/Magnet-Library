@@ -12,9 +12,9 @@ export const Categories = () => {
   console.log(categories);
   return (
     <div>
-      <h2 className="text-center secondary-text-color">Browse Genres</h2>
+      <h2 className="text-center secondary-text-color">Featured Categories</h2>
       <div className="title-underline"></div>
-      <div className="spacer-1rem "></div>
+      <div className="spacer-2rem"></div>
       <CategoriesList categories={categories} />
     </div>
   );
