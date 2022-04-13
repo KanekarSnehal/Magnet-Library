@@ -1,5 +1,33 @@
 import React from "react";
+import { Categories } from "../../components";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main className="main-container">
+      <div className="hero-container">
+        <div className="content">
+          <h3>Get Unlimited Access</h3>
+          <p className="p-md">
+            Unlock access to our library of over million videos
+          </p>
+          <Link to="explore">
+            <button className="btn secondary-btn text-bold-weight">
+              Explore Now
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className="spacer-3rem"></div>
+      <div className="spacer-3rem"></div>
+      <div className="homepage-container">
+        <Categories />
+
+        <div className="spacer-3rem "></div>
+        <div className="spacer-3rem "></div>
+        {/* <Brands /> */}
+      </div>
+    </main>
+  );
 };

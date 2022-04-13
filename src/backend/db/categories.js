@@ -8,20 +8,44 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Computer Programming",
-    description:
-      "Computer programming is the process of designing and building an executable computer program to accomplish a specific computing",
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Frontend Development",
-    description:
-      "Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application",
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Backend Development",
-    description:
-      "Backend Development is also known as server-side development. It is everything that the users don't see and contains behind-the-scenes activities that occur when performing any action on a website.",
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+  },
+  {
+    _id: uuid(),
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+  },
+  {
+    _id: uuid(),
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+  },
+  {
+    _id: uuid(),
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
+  },
+  {
+    _id: uuid(),
+    categoryName: "Indie",
+    imageUrl:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1649829085/magnet%20library/categories_o3quvu.jpg",
   },
 ];
