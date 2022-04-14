@@ -23,7 +23,7 @@ export function Signup() {
 
   const postSignupData = async () => {
     const { firstName, lastName, email, password, confirmPassword } = userInfo;
-    // console.log(firstName, lastName, email, password, confirmPassword);
+
     try {
       const { data } = await axios.post(`/api/auth/signup`, {
         firstName,
