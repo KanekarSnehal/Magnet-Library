@@ -9,7 +9,7 @@ export const Categories = () => {
     const res = await getCategories();
     setCategories(res.data.categories);
   }, []);
-  console.log(categories);
+
   return (
     <div>
       <h2 className="text-center secondary-text-color">Featured Categories</h2>

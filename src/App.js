@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home, Explore } from "./pages/index";
+import { Home, Explore, Login, Signup, Profile } from "./pages/index";
 import { Header } from "./components";
+import { GuestRoute, ProtectedRoute } from "./utilities/routes";
+
 import "./App.css";
 function App() {
   return (
@@ -9,6 +11,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
+        <Route element={<GuestRoute />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Route>
+        <Route element={<ProtectedRoute />}>
+          <Route path="/profile" element={<Profile />} />
+        </Route>
       </Routes>
     </Router>
   );

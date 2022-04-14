@@ -1,15 +1,19 @@
 import React from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/index";
 
 export const Header = () => {
   const navigate = useNavigate();
+  const { user } = useAuth();
+
   return (
     <header className="header-container">
       <Link to="/" className="logo-container">
         <img src="icon.png" alt="logo" className="brand-logo" />
         <span className="brand-name ">Magnet Library </span>
       </Link>
+
       <div className="header-links mx-auto">
         <ul className="list-style-none inline-list">
           <li className="secondary-text-color mr-64">
@@ -47,10 +51,10 @@ export const Header = () => {
       </div>
 
       <div className="ml-auto mr-16 display-flex-column align-items-center">
-        <Link to={"/signup"}>
+        <Link to="/profile">
           <i className="far fa-user badge-sm-size"></i>
         </Link>
-        <span>Hi,Admin</span>
+        <span>{user ? `Hi, ${user}` : `Login`}</span>
       </div>
     </header>
   );
