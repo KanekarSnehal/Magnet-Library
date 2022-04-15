@@ -157,24 +157,24 @@ export function Signup() {
   };
 
   return (
-    <main class="main-container">
-      <div class="form-container">
-        <h4 class="secondary-text-color  text-center">SIGN UP</h4>
-        <div class="title-underline"></div>
+    <main className="main-container">
+      <div className="form-container">
+        <h4 className="secondary-text-color  text-center">SIGN UP</h4>
+        <div className="title-underline"></div>
 
-        <form class="form-col">
-          <div class="row">
-            <div class="column-30-pc">
+        <form className="form-col">
+          <div className="row">
+            <div className="column-30-pc">
               <label
                 for="first-name"
-                class="form-label text-bold-weight form-label-required-field"
+                className="form-label text-bold-weight form-label-required-field"
               >
                 First Name
               </label>
             </div>
-            <div class="column-70-pc">
+            <div className="column-70-pc">
               <input
-                class="form-field"
+                className="form-field"
                 type="text"
                 placeholder="Enter your first name"
                 name="firstName"
@@ -185,31 +185,31 @@ export function Signup() {
                 required
               />
               <div
-                class="form-validation-msg"
+                className="form-validation-msg"
                 style={{
                   display: fieldErrors.firstnameError ? "block" : "none",
                 }}
               >
                 <span>
-                  <i class="fas fa-exclamation-circle"></i>
+                  <i className="fas fa-exclamation-circle"></i>
                 </span>
                 {fieldErrors.firstnameError}
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="column-30-pc">
+          <div className="row">
+            <div className="column-30-pc">
               <label
                 for="first-name"
-                class="form-label text-bold-weight form-label-required-field"
+                className="form-label text-bold-weight form-label-required-field"
               >
                 Last Name
               </label>
             </div>
-            <div class="column-70-pc">
+            <div className="column-70-pc">
               <input
-                class="form-field"
+                className="form-field"
                 type="text"
                 placeholder="Enter your last name"
                 name="lastName"
@@ -220,31 +220,31 @@ export function Signup() {
                 required
               />
               <div
-                class="form-validation-msg"
+                className="form-validation-msg"
                 style={{
                   display: fieldErrors.lastnameError ? "block" : "none",
                 }}
               >
                 <span>
-                  <i class="fas fa-exclamation-circle"></i>
+                  <i className="fas fa-exclamation-circle"></i>
                 </span>
                 {fieldErrors.lastnameError}
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="column-30-pc">
+          <div className="row">
+            <div className="column-30-pc">
               <label
                 for="first-name"
-                class="form-label text-bold-weight form-label-required-field"
+                className="form-label text-bold-weight form-label-required-field"
               >
                 Email
               </label>
             </div>
-            <div class="column-70-pc">
+            <div className="column-70-pc">
               <input
-                class="form-field"
+                className="form-field"
                 type="email"
                 placeholder="Enter your email"
                 name="email"
@@ -255,32 +255,32 @@ export function Signup() {
                 required
               />
               <div
-                class="form-validation-msg"
+                className="form-validation-msg"
                 style={{
                   display: fieldErrors.emailError ? "block" : "none",
                 }}
               >
                 <span>
-                  <i class="fas fa-exclamation-circle"></i>
+                  <i className="fas fa-exclamation-circle"></i>
                 </span>
                 {fieldErrors.emailError}
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="column-30-pc">
+          <div className="row">
+            <div className="column-30-pc">
               <label
                 for="first-name"
-                class="form-label text-bold-weight form-label-required-field"
+                className="form-label text-bold-weight form-label-required-field"
               >
                 Password
               </label>
             </div>
-            <div class="column-70-pc">
-              <span class="input-with-eye-container">
+            <div className="column-70-pc">
+              <span className="input-with-eye-container">
                 <input
-                  class="form-field"
+                  className="form-field"
                   type="password"
                   placeholder="Enter password"
                   name="password"
@@ -290,38 +290,38 @@ export function Signup() {
                   }}
                   required
                 />
-                <button class="eye-container" tabindex="-1">
-                  <i class="fas fa-eye-slash"></i>
+                <button className="eye-container" tabindex="-1">
+                  <i className="fas fa-eye-slash"></i>
                 </button>
               </span>
 
               <div
-                class="form-validation-msg"
+                className="form-validation-msg"
                 style={{
                   display: fieldErrors.passwordError ? "block" : "none",
                 }}
               >
                 <span>
-                  <i class="fas fa-exclamation-circle"></i>
+                  <i className="fas fa-exclamation-circle"></i>
                 </span>
                 {fieldErrors.passwordError}
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="column-30-pc">
+          <div className="row">
+            <div className="column-30-pc">
               <label
                 for="first-name"
-                class="form-label text-bold-weight form-label-required-field"
+                className="form-label text-bold-weight form-label-required-field"
               >
                 Confirm Password
               </label>
             </div>
-            <div class="column-70-pc">
-              <span class="input-with-eye-container">
+            <div className="column-70-pc">
+              <span className="input-with-eye-container">
                 <input
-                  class="form-field"
+                  className="form-field"
                   type="password"
                   placeholder="Re-type password"
                   name="confirmPassword"
@@ -331,19 +331,19 @@ export function Signup() {
                   }}
                   required
                 />
-                <button class="eye-container" tabindex="-1">
-                  <i class="fas fa-eye-slash"></i>
+                <button className="eye-container" tabindex="-1">
+                  <i className="fas fa-eye-slash"></i>
                 </button>
               </span>
 
               <div
-                class="form-validation-msg"
+                className="form-validation-msg"
                 style={{
                   display: fieldErrors.confirmPasswordError ? "block" : "none",
                 }}
               >
                 <span>
-                  <i class="fas fa-exclamation-circle"></i>
+                  <i className="fas fa-exclamation-circle"></i>
                 </span>
                 Password does not match
               </div>
@@ -351,16 +351,16 @@ export function Signup() {
           </div>
 
           <button
-            class="btn primary-btn text-center"
+            className="btn primary-btn text-center"
             type="submit"
             onClick={submitSignupForm}
           >
             REGISTER
           </button>
           <p>{error}</p>
-          <div class="py-16">
+          <div className="py-16">
             Already registered?
-            <Link to="/login" class="link-btn">
+            <Link to="/login" className="link-btn">
               Login here
             </Link>
           </div>
