@@ -1,0 +1,11 @@
+.divider-line {
+    background-color: var(--secondary-lighter);
+    width: 100%;
+    height: 1.5px;
+  }
+
+.profile-container{
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem;
+}
