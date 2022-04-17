@@ -1,0 +1,23 @@
+.chips-container{
+    width: calc(100%-6.25rem);
+    position: sticky;
+    left: 6.25rem;
+    top: 7.7vh;
+    background-color: white;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.chip{
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.chips-active{
+    background-color: var(--secondary-color);
+    color: var(--primary-lighter);
+}

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/index";
+import { useAuth, useData } from "../../context";
 
 export const Header = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
+  const { dataDispatch } = useData();
 
   return (
     <header className="header-container">
@@ -46,7 +47,10 @@ export const Header = () => {
           type="text"
           name="searchbar"
           id="searchbar"
-          placeholder="Search products..."
+          placeholder="Search videos..."
+          onChange={(e) =>
+            dataDispatch({ type: "SEARCH", payload: e.target.value })
+          }
         />
       </div>
 

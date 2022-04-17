@@ -1,17 +1,18 @@
 ::-webkit-scrollbar {
-    width: var(--size-8);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
-    border-radius: var(--size-8);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-dark);
-  }
+  width: var(--size-8);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: var(--size-8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
   
   .header-container {
     z-index: 10;
@@ -108,3 +109,5 @@
   .color-light{
     color: var(--primary-color)
   }
+
+  
