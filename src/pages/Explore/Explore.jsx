@@ -12,13 +12,13 @@ export const Explore = () => {
 
   return (
     <>
-      <div className="explore-container">
+      <div className="main-display">
         <SideBar />
         <div className="main">
           <Chips />
           <div className="vertical-card-wrapper">
             {filteredVideos?.map((video) => (
-              <VerticalCard key={video._id} {...video} />
+              <VerticalCard key={video._id} video={video} />
             ))}
           </div>
         </div>

@@ -2,7 +2,7 @@ import axios from "axios";
 import { videoUrl } from "../utils/index";
 import { videoConstants } from "../utils/dataActions";
 
-const { GET_VIDEOS, LOADING } = videoConstants;
+const { GET_VIDEOS, LOADING, ERROR } = videoConstants;
 
 export const getVideos = async (dispatch) => {
   try {
@@ -12,7 +12,6 @@ export const getVideos = async (dispatch) => {
       dispatch({ type: GET_VIDEOS, payload: response.data.videos });
     }
   } catch (e) {
-    console.log(here, e);
     dispatch({ type: ERROR, payload: e });
   }
 };
