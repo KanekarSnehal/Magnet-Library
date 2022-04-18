@@ -1,0 +1,51 @@
+.vertical-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    overflow-y: scroll;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.vertical-card-container{
+    margin:0rem;
+    width: 100%;
+}
+
+.card-content {
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+}
+
+.card-content i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+.card-content i:hover {
+    background-color:var(--secondary-light);
+    border-radius: 50%;
+}
+.avatar-xs-size{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.card-author{
+    font-size: 0.875rem;
+}
+
+.video-text{
+    display: flex;
+    flex-direction: column;
+}

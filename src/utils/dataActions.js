@@ -1,0 +1,7 @@
+export const videoConstants = {
+  GET_VIDEOS: "GET_VIDEOS",
+  LOADING: "LOADING",
+  ERROR: "ERROR",
+  FILTER_CATEGORY: "FILTER_CATEGORY",
+  SEARCH: "SEARCH",
+};

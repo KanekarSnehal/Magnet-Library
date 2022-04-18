@@ -1,0 +1,30 @@
+.side-bar-container{
+    grid-area: sidebar;
+    position: fixed;
+    height: 100%;
+    width: 6.25rem;
+    top:-10;
+    left: 0;
+    padding: 0 0.5rem;
+    overflow: auto;
+    box-shadow: 4px 8px 12px 0 rgb(0 0 0 / 5%);
+}
+
+.side-bar-items{
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.side-bar-items i{
+    font-size: 1.5rem;
+    
+}
+.side-bar-items:hover{
+    color:var(--primary-darker);
+    font-weight: 900;
+}

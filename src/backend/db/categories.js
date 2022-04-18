@@ -38,7 +38,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "Webseries",
+    categoryName: "Short Flims",
     imageUrl:
       "https://res.cloudinary.com/dflebgpde/image/upload/v1649853186/magnet%20library/webseries_nmmumw.jpg",
   },
