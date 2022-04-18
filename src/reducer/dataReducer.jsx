@@ -5,8 +5,7 @@ const { ADD_TO_LIKED, REMOVE_FROM_LIKED } = likedConstants;
 
 export const dataReducer = (state, action) => {
   const { type, payload } = action;
-  console.log(payload);
-  console.log(type);
+
   switch (type) {
     case GET_VIDEOS:
       return { ...state, videos: payload };

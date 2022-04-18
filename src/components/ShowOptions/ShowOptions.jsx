@@ -11,11 +11,8 @@ export const ShowOptions = ({ video }) => {
   } = useData();
   const [isHidden, setIsHidden] = useState(true);
 
-  console.log(video);
-
   const { isAuthenticated } = useAuth();
   const isLikedVideo = liked.some((likedVideo) => likedVideo._id === video._id);
-  console.log(isLikedVideo);
   return (
     <>
       <i

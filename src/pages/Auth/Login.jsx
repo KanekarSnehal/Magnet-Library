@@ -13,7 +13,6 @@ export function Login() {
   const navigate = useNavigate();
 
   const onChangeHandler = (e) => {
-    console.log(e.target.value);
     setUserInfo({ ...userInfo, [e.target.name]: e.target.value });
   };
 
