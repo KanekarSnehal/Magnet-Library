@@ -1,5 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home, Explore, Login, Signup, Profile, Liked } from "./pages/index";
+import {
+  Home,
+  Explore,
+  Login,
+  Signup,
+  Profile,
+  Liked,
+  WatchLater,
+} from "./pages/index";
 import { Header } from "./components";
 import { GuestRoute, ProtectedRoute } from "./utilities/routes";
 
@@ -18,6 +26,7 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/profile" element={<Profile />} />
           <Route path="/liked" element={<Liked />} />
+          <Route path="/watchlater" element={<WatchLater />} />
         </Route>
       </Routes>
     </Router>

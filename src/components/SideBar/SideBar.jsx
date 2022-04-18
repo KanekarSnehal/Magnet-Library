@@ -22,8 +22,9 @@ export const SideBar = () => {
           <i className="bx bx-like"></i>
           <span>Liked Videos</span>
         </li>
-        <li className="side-bar-items">
-          <i className="bx bx-time-five"></i>Watch Later
+        <li className="side-bar-items" onClick={() => navigate("/watchlater")}>
+          <i className="bx bx-time-five"></i>
+          Watch Later
         </li>
         <li className="side-bar-items">
           <i className="bx bx-history"></i>History
