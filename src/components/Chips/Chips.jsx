@@ -25,11 +25,12 @@ export const Chips = () => {
         {chips.map((chip) => (
           <li
             key={chip}
-            className={
-              filterByCategory.toLowerCase() === chip.toLowerCase()
-                ? `chip btn outline-secondary-btn chips-active`
-                : `chip btn outline-secondary-btn`
-            }
+            className={`chip btn outline-secondary-btn 
+              ${
+                filterByCategory.toLowerCase() === chip.toLowerCase()
+                  ? "chips-active"
+                  : ""
+              }`}
             onClick={() =>
               dataDispatch({ type: FILTER_CATEGORY, payload: chip })
             }
