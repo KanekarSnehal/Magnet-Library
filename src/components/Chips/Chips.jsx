@@ -7,7 +7,6 @@ export const Chips = () => {
   const { dataState, dataDispatch } = useData();
   const { FILTER_CATEGORY } = videoConstants;
   const { filterByCategory } = dataState;
-  console.log(filterByCategory);
 
   const chips = [
     "All",

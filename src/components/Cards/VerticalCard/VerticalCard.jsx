@@ -1,15 +1,10 @@
 import React from "react";
 import "./vertical-card.css";
+import { useState } from "react";
+import { ShowOptions } from "../../index";
 
-export const VerticalCard = ({
-  _id,
-  title,
-  creator,
-  creatorImage,
-  categoryName,
-  staticImage,
-  description,
-}) => {
+export const VerticalCard = ({ title, creator, creatorImage, staticImage }) => {
+  const [isHidden, setIsHidden] = useState(true);
   return (
     <div className="vertical-card-container">
       <img className="card-image" src={staticImage} alt="card image" />
@@ -25,7 +20,11 @@ export const VerticalCard = ({
           <span className="card-author">{creator}</span>
         </div>
 
-        <i className="bx bx-dots-vertical-rounded ml-auto"></i>
+        <i
+          className="bx bx-dots-vertical-rounded ml-auto"
+          onClick={() => setIsHidden(!isHidden)}
+        ></i>
+        {!isHidden && <ShowOptions />}
       </div>
     </div>
   );
