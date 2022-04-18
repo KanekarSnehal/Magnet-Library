@@ -5,3 +5,9 @@ export const videoConstants = {
   FILTER_CATEGORY: "FILTER_CATEGORY",
   SEARCH: "SEARCH",
 };
+
+export const likedConstants = {
+  ADD_TO_LIKED: "ADD_TO_LIKED",
+  REMOVE_FROM_LIKED: "REMOVE_FROM_LIKED",
+  ERROR: "ERROR",
+};

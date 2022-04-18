@@ -1,23 +1,26 @@
 import React from "react";
 import "./side-bar.css";
+import { useNavigate } from "react-router-dom";
+
 export const SideBar = () => {
+  const navigate = useNavigate();
+
   return (
     <aside className="side-bar-container">
       <ul className="my-16">
-        <li className="side-bar-items">
+        <li className="side-bar-items" onClick={() => navigate("/")}>
           <i className="bx bx-home"></i>Home
         </li>
-        <li className="side-bar-items">
-          <i className="bx bx-compass"></i>Explore
+        <li className="side-bar-items" onClick={() => navigate("/explore")}>
+          <i className="bx bx-compass"></i>
+          Explore
         </li>
         <li className="side-bar-items">
           <i className="bx bx-play-circle"></i>Playlists
         </li>
-        <li>
-          <div className="side-bar-items">
-            <i className="bx bx-like"></i>
-            <span>Liked Videos</span>
-          </div>
+        <li className="side-bar-items" onClick={() => navigate("/liked")}>
+          <i className="bx bx-like"></i>
+          <span>Liked Videos</span>
         </li>
         <li className="side-bar-items">
           <i className="bx bx-time-five"></i>Watch Later

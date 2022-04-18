@@ -1,30 +1,23 @@
 import React from "react";
 import "./vertical-card.css";
-import { useState } from "react";
 import { ShowOptions } from "../../index";
 
-export const VerticalCard = ({ title, creator, creatorImage, staticImage }) => {
-  const [isHidden, setIsHidden] = useState(true);
+export const VerticalCard = ({ video }) => {
   return (
     <div className="vertical-card-container">
-      <img className="card-image" src={staticImage} alt="card image" />
+      <img className="card-image" src={video.staticImage} alt="card image" />
       <div className="card-content">
         <img
           loading="lazy"
-          src={creatorImage}
+          src={video.creatorImage}
           className="avatar avatar-xs-size"
           alt="avatar"
         />
         <div className="video-text mx-8">
-          <p className="card-title ">{title}</p>
-          <span className="card-author">{creator}</span>
+          <p className="card-title ">{video.title}</p>
+          <span className="card-author">{video.creator}</span>
         </div>
-
-        <i
-          className="bx bx-dots-vertical-rounded ml-auto"
-          onClick={() => setIsHidden(!isHidden)}
-        ></i>
-        {!isHidden && <ShowOptions />}
+        <ShowOptions video={video} />
       </div>
     </div>
   );

@@ -16,7 +16,6 @@ const initialDataState = {
   searchQuery: null,
   filterByCategory: "ALL",
 };
-
 const DataProvider = ({ children }) => {
   const [dataState, dataDispatch] = useReducer(dataReducer, initialDataState);
 

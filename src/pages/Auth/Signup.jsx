@@ -37,12 +37,8 @@ export function Signup() {
         type: authActionsConstants.GET_USER_DETAILS,
         payload: data.createdUser,
       });
-      console.log(data);
       navigate("/login");
     } catch (error) {
-      console.log(error.response.data);
-      console.log(error.response.data.error);
-      console.log(error.message);
       authDispatch({
         type: authActionsConstants.USER_SIGNUP_FAILURE,
         payload: `Couldn't Signup, Please try again `,
