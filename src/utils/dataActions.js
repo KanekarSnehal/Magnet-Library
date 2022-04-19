@@ -11,3 +11,7 @@ export const likedConstants = {
   REMOVE_FROM_LIKED: "REMOVE_FROM_LIKED",
   ERROR: "ERROR",
 };
+export const watchLaterConstants = {
+  ADD_TO_WATCH_LATER: "ADD_TO_WATCH_LATER",
+  REMOVE_FROM_WATCH_LATER: "REMOVE_FROM_WATCH_LATER",
+};
