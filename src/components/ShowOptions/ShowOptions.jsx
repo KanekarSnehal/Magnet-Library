@@ -8,6 +8,7 @@ import {
   addToWatchLater,
 } from "../../services";
 import { useState } from "react";
+import { PlaylistModal } from "../PlaylistModal/PlaylistModal";
 
 export const ShowOptions = ({ video }) => {
   const {
@@ -16,6 +17,8 @@ export const ShowOptions = ({ video }) => {
   } = useData();
   const [isHidden, setIsHidden] = useState(true);
   const { isAuthenticated } = useAuth();
+  const [showModal, setShowModal] = useState(false);
+
   const isLikedVideo = liked.some((likedVideo) => likedVideo._id === video._id);
   const inWatchLater = watchLater.some(
     (watchlaterVideo) => watchlaterVideo._id === video._id
@@ -24,7 +27,7 @@ export const ShowOptions = ({ video }) => {
   return (
     <>
       <i
-        className="bx bx-dots-vertical-rounded ml-auto"
+        className="bx bx-dots-vertical-rounded ml-auto icon"
         onClick={() => setIsHidden(!isHidden)}
       ></i>
       {!isHidden && (
@@ -63,11 +66,18 @@ export const ShowOptions = ({ video }) => {
               ></i>
             )}
           </li>
-          <li className="show-items">
+          <li
+            className="show-items"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowModal(true);
+            }}
+          >
             <i className="bx bx-list-plus"></i>
           </li>
         </ul>
       )}
+      {showModal && <PlaylistModal setShowModal={setShowModal} video={video} />}
     </>
   );
 };

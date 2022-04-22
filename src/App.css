@@ -110,4 +110,8 @@
     color: var(--primary-color)
   }
 
+
+  p{
+    margin: 0;
+  }
   

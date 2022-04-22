@@ -7,6 +7,7 @@ import {
   Profile,
   Liked,
   WatchLater,
+  Playlist,
 } from "./pages/index";
 import { Header } from "./components";
 import { GuestRoute, ProtectedRoute } from "./utilities/routes";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/liked" element={<Liked />} />
           <Route path="/watchlater" element={<WatchLater />} />
+          <Route path="/playlist" element={<Playlist />} />
         </Route>
       </Routes>
     </Router>

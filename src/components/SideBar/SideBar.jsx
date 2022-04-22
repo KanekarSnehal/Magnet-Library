@@ -15,7 +15,7 @@ export const SideBar = () => {
           <i className="bx bx-compass"></i>
           Explore
         </li>
-        <li className="side-bar-items">
+        <li className="side-bar-items" onClick={() => navigate("/playlist")}>
           <i className="bx bx-play-circle"></i>Playlists
         </li>
         <li className="side-bar-items" onClick={() => navigate("/liked")}>

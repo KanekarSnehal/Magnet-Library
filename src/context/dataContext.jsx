@@ -10,7 +10,7 @@ const initialDataState = {
   liked: [],
   watchLater: [],
   history: [],
-  playlist: [],
+  playlists: [],
   loading: false,
   error: false,
   searchQuery: null,
