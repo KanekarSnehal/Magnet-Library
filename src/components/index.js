@@ -4,3 +4,6 @@ export { SideBar } from "./SideBar/SideBar";
 export { Chips } from "./Chips/Chips";
 export { VerticalCard } from "./Cards/VerticalCard/VerticalCard";
 export { ShowOptions } from "./ShowOptions/ShowOptions";
+export { PlaylistList } from "./PlaylistList/PlaylistList";
+export { PlaylistVideos } from "./PlaylistVideos/PlaylistVideos";
+export { HorizontalCard } from "./Cards/HorizontalCard/HorizontalCard";
