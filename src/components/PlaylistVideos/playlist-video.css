@@ -1,0 +1,8 @@
+.playlist-video-container{
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    height:inherit;
+    padding: 0.5rem;
+    min-width: 30rem;
+}
