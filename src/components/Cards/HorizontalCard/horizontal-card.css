@@ -1,0 +1,16 @@
+.horizontal-card-container{
+    height: 8rem;
+}
+
+.horizontal-card-container:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.horizontal-card-container .card-image {
+    width: 15rem;
+    height: 100%;
+}
+
+.card-details{
+   padding: 1rem;
+}
