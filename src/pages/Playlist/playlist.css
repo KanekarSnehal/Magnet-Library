@@ -1,0 +1,8 @@
+.playlist-container{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    gap: 1.5rem;
+    grid-template-areas: "list video";
+    height: 90vh;
+}
