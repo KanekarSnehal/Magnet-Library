@@ -5,3 +5,9 @@
     gap: 0.5rem;
     justify-items: center;
 }
+
+.clear-all-btn{
+    width: fit-content;
+    margin-right: 2rem;
+    margin-left: auto;
+}
