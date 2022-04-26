@@ -1,0 +1,9 @@
+.readmore-text{
+ padding: 0.5rem;
+}
+
+.read-or-hide{
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}

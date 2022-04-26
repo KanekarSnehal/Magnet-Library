@@ -1,4 +1,4 @@
-export { getVideos } from "./video";
+export { getVideos, getSingleVideo } from "./video";
 export { addToLiked, removeFromLiked } from "./liked";
 export { addToWatchLater, removeFromWatchLater } from "./watchlater";
 export {
@@ -9,3 +9,10 @@ export {
   addVideoToPlaylist,
   deleteVideoFromPlaylist,
 } from "./playlist";
+
+export {
+  getHistory,
+  addVideoToHistory,
+  deleteVideoFromHistory,
+  clearHistory,
+} from "./history";

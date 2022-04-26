@@ -26,7 +26,7 @@ export const SideBar = () => {
           <i className="bx bx-time-five"></i>
           Watch Later
         </li>
-        <li className="side-bar-items">
+        <li className="side-bar-items" onClick={() => navigate("/history")}>
           <i className="bx bx-history"></i>History
         </li>
       </ul>

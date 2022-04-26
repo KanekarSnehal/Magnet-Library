@@ -7,3 +7,5 @@ export { ShowOptions } from "./ShowOptions/ShowOptions";
 export { PlaylistList } from "./PlaylistList/PlaylistList";
 export { PlaylistVideos } from "./PlaylistVideos/PlaylistVideos";
 export { HorizontalCard } from "./Cards/HorizontalCard/HorizontalCard";
+export { SingleVideo } from "./SingleVideo/SingleVideo";
+export { ReadMore } from "./ReadMore/ReadMore";

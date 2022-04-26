@@ -23,7 +23,6 @@ export const ShowOptions = ({ video }) => {
   const inWatchLater = watchLater.some(
     (watchlaterVideo) => watchlaterVideo._id === video._id
   );
-
   return (
     <>
       <i
