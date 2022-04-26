@@ -3,9 +3,11 @@ import {
   likedConstants,
   watchLaterConstants,
   playlistConstants,
+  historyConstants,
 } from "../utils";
 
-const { GET_VIDEOS, ERROR, LOADING, FILTER_CATEGORY, SEARCH } = videoConstants;
+const { GET_VIDEOS, ERROR, LOADING, FILTER_CATEGORY, SEARCH, GET_VIDEO } =
+  videoConstants;
 const { ADD_TO_LIKED, REMOVE_FROM_LIKED } = likedConstants;
 const { ADD_TO_WATCH_LATER, REMOVE_FROM_WATCH_LATER } = watchLaterConstants;
 const {
@@ -16,6 +18,13 @@ const {
   DELETE_VIDEO_FROM_PLAYLIST,
 } = playlistConstants;
 
+const {
+  GET_HISTORY,
+  CLEAR_HISTORY,
+  ADD_VIDEO_TO_HISTORY,
+  DELETE_VIDEO_FROM_HISTORY,
+} = historyConstants;
+
 export const dataReducer = (state, action) => {
   const { type, payload } = action;
   let playlists = state.playlists;
@@ -23,6 +32,8 @@ export const dataReducer = (state, action) => {
   switch (type) {
     case GET_VIDEOS:
       return { ...state, videos: payload };
+    case GET_VIDEO:
+      return { ...state, video: payload };
     case ERROR:
       return { ...state, error: payload };
     case LOADING:
@@ -48,6 +59,11 @@ export const dataReducer = (state, action) => {
       );
 
       return { ...state, playlists: newPlaylists };
+    case GET_HISTORY:
+    case CLEAR_HISTORY:
+    case ADD_VIDEO_TO_HISTORY:
+    case DELETE_VIDEO_FROM_HISTORY:
+      return { ...state, history: payload };
     default:
       return state;
   }

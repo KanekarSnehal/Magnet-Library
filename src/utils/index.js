@@ -3,6 +3,7 @@ export {
   likedConstants,
   watchLaterConstants,
   playlistConstants,
+  historyConstants,
 } from "./dataActions";
 
 export {
@@ -11,6 +12,7 @@ export {
   likedUrl,
   watchLaterUrl,
   playlistUrl,
+  historyUrl,
 } from "./apiUrls";
 
 export { compose, getSearchResults, filterByCategory } from "./helper";

@@ -1,0 +1,8 @@
+.video-details-conatiner{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3.5fr  1.5fr ;
+    gap: 1.5rem;
+    grid-template-areas: "video note";
+    height: 90vh;
+}

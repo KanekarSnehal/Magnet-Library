@@ -8,6 +8,8 @@ import {
   Liked,
   WatchLater,
   Playlist,
+  VideoDetailPage,
+  History,
 } from "./pages/index";
 import { Header } from "./components";
 import { GuestRoute, ProtectedRoute } from "./utilities/routes";
@@ -20,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
+        <Route path="/explore/:id" element={<VideoDetailPage />} />
         <Route element={<GuestRoute />}>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -29,6 +32,7 @@ function App() {
           <Route path="/liked" element={<Liked />} />
           <Route path="/watchlater" element={<WatchLater />} />
           <Route path="/playlist" element={<Playlist />} />
+          <Route path="/history" element={<History />} />
         </Route>
       </Routes>
     </Router>

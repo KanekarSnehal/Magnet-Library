@@ -1,0 +1,32 @@
+.single-video-container{
+    grid-area: video;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-section-frame {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.video-content{
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title{
+    font-weight: bold;
+    font-size: var(--size-20);
+}
+
+.divider{
+    border-bottom: 1px solid rgb(180, 176, 176);
+}
+
+.align-items-baseline{
+    align-items: baseline;
+}
