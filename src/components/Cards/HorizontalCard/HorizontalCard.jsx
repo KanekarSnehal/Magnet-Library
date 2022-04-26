@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const HorizontalCard = ({ video, deleteVideo }) => {
   return (
     <div className="horizontal-card-container">
-      <Link to={`/explore/${video._id}`}>
+      <Link to={`/explore/${video._id}`} className="link">
         <img className="card-image" src={video.staticImage} alt="card image" />
       </Link>
       <div className="card-details">

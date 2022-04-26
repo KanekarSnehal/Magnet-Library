@@ -11,3 +11,7 @@
 .card-details{
    padding: 1rem;
 }
+
+.link{
+    width: fit-content;
+}
