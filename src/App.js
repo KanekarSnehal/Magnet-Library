@@ -13,12 +13,14 @@ import {
 } from "./pages/index";
 import { Header } from "./components";
 import { GuestRoute, ProtectedRoute } from "./utilities/routes";
-
+import { ToastContainer } from "react-toastify";
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <Router>
       <Header />
+      <ToastContainer autoClose={2000} theme="colored" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
