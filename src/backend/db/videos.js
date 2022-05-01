@@ -22,7 +22,7 @@ export const videos = [
     title: "Alan Walker, Sabrina Carpenter & Farruko - On My Way",
     creator: "Alan Walker",
     creatorImage:
-      "https://yt3.ggpht.com/JGFKbcaC0Wh8dU5GcY4KXESw6KPvoO2K5ptiNvGLrrWU7Vs9nhNHDnJofDWh-fQorjbg-VQw=s176-c-k-c0x00ffffff-no-rj",
+      "https://yt3.ggpht.com/wHPSNcM8CEZwPoJcCuxMHq_MXLH721QkGi5EpNOaQXZo3nqvja6f5MLTynFJ5dl7wU8kPB2k=s88-c-k-c0x00ffffff-no-nd-rj",
     categoryName: "Music",
     staticImage:
       "https://i.ytimg.com/vi/dhYOPzcsbGM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAudZaE2MOvxewPBMC-iUpj2wIDhA",

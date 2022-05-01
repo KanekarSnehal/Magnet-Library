@@ -8,11 +8,13 @@ export const videoConstants = {
 };
 
 export const likedConstants = {
+  GET_LIKED_VIDEOS: "GET_LIKED_VIDEOS",
   ADD_TO_LIKED: "ADD_TO_LIKED",
   REMOVE_FROM_LIKED: "REMOVE_FROM_LIKED",
-  ERROR: "ERROR",
 };
+
 export const watchLaterConstants = {
+  GET_WATCH_LATER_VIDEOS: "GET_WATCH_LATER_VIDEOS",
   ADD_TO_WATCH_LATER: "ADD_TO_WATCH_LATER",
   REMOVE_FROM_WATCH_LATER: "REMOVE_FROM_WATCH_LATER",
 };

@@ -6,9 +6,8 @@ import {
   historyConstants,
 } from "../utils";
 
-const { GET_VIDEOS, ERROR, LOADING, FILTER_CATEGORY, SEARCH, GET_VIDEO } =
-  videoConstants;
-const { ADD_TO_LIKED, REMOVE_FROM_LIKED } = likedConstants;
+const { GET_VIDEOS, FILTER_CATEGORY, SEARCH, GET_VIDEO } = videoConstants;
+const { ADD_TO_LIKED, REMOVE_FROM_LIKED, GET_LIKED_VIDEOS } = likedConstants;
 const { ADD_TO_WATCH_LATER, REMOVE_FROM_WATCH_LATER } = watchLaterConstants;
 const {
   GET_PLAYLISTS,
@@ -34,14 +33,13 @@ export const dataReducer = (state, action) => {
       return { ...state, videos: payload };
     case GET_VIDEO:
       return { ...state, video: payload };
-    case ERROR:
-      return { ...state, error: payload };
     case LOADING:
       return { ...state, loading: true };
     case FILTER_CATEGORY:
       return { ...state, filterByCategory: payload };
     case SEARCH:
       return { ...state, searchQuery: payload };
+    case GET_LIKED_VIDEOS:
     case ADD_TO_LIKED:
     case REMOVE_FROM_LIKED:
       return { ...state, liked: payload };

@@ -9,3 +9,4 @@ export { PlaylistVideos } from "./PlaylistVideos/PlaylistVideos";
 export { HorizontalCard } from "./Cards/HorizontalCard/HorizontalCard";
 export { SingleVideo } from "./SingleVideo/SingleVideo";
 export { ReadMore } from "./ReadMore/ReadMore";
+export { Loader } from "./Loader/Loader";

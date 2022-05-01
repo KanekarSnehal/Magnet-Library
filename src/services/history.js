@@ -1,6 +1,7 @@
 import axios from "axios";
 import { historyUrl } from "../utils/index";
 import { historyConstants } from "../utils/dataActions";
+import { toast } from "react-toastify";
 
 const {
   GET_HISTORY,
@@ -20,7 +21,7 @@ export const getHistory = async (dispatch) => {
       dispatch({ type: GET_HISTORY, payload: response.data.history });
     }
   } catch (e) {
-    console.log(e);
+    toast.error(e?.response?.data?.errors[0]);
   }
 };
 
@@ -31,10 +32,10 @@ export const addVideoToHistory = async (video, dispatch) => {
 
     if (response.status === 201) {
       dispatch({ type: ADD_VIDEO_TO_HISTORY, payload: response.data.history });
-      console.log(response.data.history);
+      toast.success("Added to history!");
     }
   } catch (e) {
-    console.log(e);
+    toast.error(e?.response?.data?.errors[0]);
   }
 };
 
@@ -46,9 +47,10 @@ export const deleteVideoFromHistory = async (videoID, dispatch) => {
         type: DELETE_VIDEO_FROM_HISTORY,
         payload: response.data.history,
       });
+      toast.success("Removed from history!");
     }
   } catch (e) {
-    console.log(e);
+    toast.error(e?.response?.data?.errors[0]);
   }
 };
 
@@ -57,8 +59,9 @@ export const clearHistory = async (dispatch) => {
     const response = await axios.delete(`${historyUrl}/all`, config);
     if (response.status === 200) {
       dispatch({ type: CLEAR_HISTORY, payload: response.data.history });
+      toast.success("Cleared History!");
     }
   } catch (e) {
-    console.log(e);
+    toast.error(e?.response?.data?.errors[0]);
   }
 };

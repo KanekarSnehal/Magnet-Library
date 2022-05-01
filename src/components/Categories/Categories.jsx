@@ -1,14 +1,18 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { getCategories } from "../../services/videoServices";
+import { getCategories } from "../../services";
 import { CategoriesList } from "../CategoriesList/CategoriesList";
+import { useAuth } from "../../context/authContext";
 
 export const Categories = () => {
   const [categories, setCategories] = useState([]);
+  const { isAuthenticated } = useAuth();
   useEffect(async () => {
-    const res = await getCategories();
-    setCategories(res.data.categories);
-  }, []);
+    if (categories.length === 0) {
+      const res = await getCategories();
+      setCategories(res.data.categories);
+    }
+  }, [isAuthenticated]);
 
   return (
     <div>

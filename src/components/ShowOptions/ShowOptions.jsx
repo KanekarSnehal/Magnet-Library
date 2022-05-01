@@ -9,6 +9,7 @@ import {
 } from "../../services";
 import { useState } from "react";
 import { PlaylistModal } from "../PlaylistModal/PlaylistModal";
+import { toast } from "react-toastify";
 
 export const ShowOptions = ({ video }) => {
   const {
@@ -43,7 +44,7 @@ export const ShowOptions = ({ video }) => {
                 onClick={() => {
                   isAuthenticated
                     ? addToLiked(video, dataDispatch)
-                    : alert("login first");
+                    : toast.warning("Please login first!");
                 }}
               ></i>
             )}
@@ -60,7 +61,7 @@ export const ShowOptions = ({ video }) => {
                 onClick={() => {
                   isAuthenticated
                     ? addToWatchLater(video, dataDispatch)
-                    : alert("login first");
+                    : toast.warning("Please login first!");
                 }}
               ></i>
             )}
@@ -68,8 +69,10 @@ export const ShowOptions = ({ video }) => {
           <li
             className="show-items"
             onClick={(e) => {
-              e.stopPropagation();
-              setShowModal(true);
+              if (isAuthenticated) {
+                e.stopPropagation();
+                setShowModal(true);
+              } else toast.warning("Please login first!");
             }}
           >
             <i className="bx bx-list-plus"></i>

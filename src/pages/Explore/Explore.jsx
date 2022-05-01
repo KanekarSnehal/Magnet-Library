@@ -1,14 +1,10 @@
 import React from "react";
-import { SideBar, Chips, VerticalCard } from "../../components";
+import { SideBar, Chips, VerticalCard, Loader } from "../../components";
 import "./explore.css";
 import { useData } from "../../context";
 
 export const Explore = () => {
-  const {
-    dataState: { videos },
-    dataDispatch,
-    filteredVideos,
-  } = useData();
+  const { filteredVideos } = useData();
 
   return (
     <>
@@ -17,9 +13,15 @@ export const Explore = () => {
         <div className="main">
           <Chips />
           <div className="vertical-card-wrapper">
-            {filteredVideos?.map((video) => (
-              <VerticalCard key={video._id} video={video} />
-            ))}
+            {filteredVideos.length !== 0 ? (
+              filteredVideos.map((video) => (
+                <VerticalCard key={video._id} video={video} />
+              ))
+            ) : (
+              <div className="overlay">
+                <Loader />
+              </div>
+            )}
           </div>
         </div>
       </div>
