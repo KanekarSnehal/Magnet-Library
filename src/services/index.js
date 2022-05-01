@@ -1,6 +1,12 @@
 export { getVideos, getSingleVideo } from "./video";
-export { addToLiked, removeFromLiked } from "./liked";
-export { addToWatchLater, removeFromWatchLater } from "./watchlater";
+export { addToLiked, removeFromLiked, getLikedVideos } from "./liked";
+
+export {
+  addToWatchLater,
+  removeFromWatchLater,
+  getWatchLaterVideos,
+} from "./watchlater";
+
 export {
   getPlaylists,
   addPlaylist,
@@ -16,3 +22,5 @@ export {
   deleteVideoFromHistory,
   clearHistory,
 } from "./history";
+
+export { getCategories } from "./categories";
