@@ -30,3 +30,9 @@
 .align-items-baseline{
     align-items: baseline;
 }
+
+@media screen and (max-width:768px){
+    .single-video-container{
+        overflow: hidden;
+    }
+}

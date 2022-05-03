@@ -6,3 +6,13 @@
     grid-template-areas: "video note";
     height: 90vh;
 }
+
+@media screen and (max-width:768px){
+    .video-details-conatiner{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        justify-items: center;
+        overflow: hidden;
+    }
+}

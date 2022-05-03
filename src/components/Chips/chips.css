@@ -21,3 +21,15 @@
     background-color: var(--secondary-color);
     color: var(--primary-lighter);
 }
+
+@media screen and (max-width: 480px) {
+    .chips-container{
+        top: 14.5vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .btn{
+        padding: 0.2rem 0.5rem;
+    }
+}

@@ -90,18 +90,16 @@ export const videos = [
     description: `After Ellen saw Brielle's video on ellentube, she invited her to showcase her science smarts on the show!`,
   },
   {
-    _id: "Tuw8hxrFBH",
-    title: "One of the Greatest Speeches Ever | Steve Jobs",
-    creator: "Motivation Ark",
+    _id: "HAnw168huqA",
+    title: "Think Fast, Talk Smart: Communication Techniques",
+    creator: "Stanford Graduate School of Business",
     creatorImage:
-      "https://yt3.ggpht.com/UCGBFsIBwAhhlj34plgVo-HwSx1jI59BTf40dIKv2vNG3RMbzY6AhU7Uz2Jimek9_Jb5eS5p-7M=s88-c-k-c0x00ffffff-no-rj",
+      "https://yt3.ggpht.com/ytc/AKedOLRSMpZ9D2BtDJbw9rL4jBf7TvEZaDFgZ49b_Ah16Q=s88-c-k-c0x00ffffff-no-rj",
     categoryName: "Motivation",
     staticImage:
-      "https://i.ytimg.com/vi/Tuw8hxrFBH8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDkW6jH_2XVhNBsvrSa9_gDFQsICQ",
+      "https://i.ytimg.com/vi/o3K_HbpWNpg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLXvjkxO12SOw57bNsppcNfEYRWw",
     dynamicImage:
-      "https://i.ytimg.com/an_webp/Tuw8hxrFBH8/mqdefault_6s.webp?du=3000&sqp=CODZ7pIG&rs=AOn4CLClnEVJJZQFiVZiSjkK1NOiEedXOQ",
-    description: `Steve Jobs delivers an inspirational speech. Listen to the end for the most life changing quote of all-time. Don't let anyone ever tell you that you cannot achieve your dreams.
-
-    You will be inspired and motivated to go out there and achieve your goals. I hope you all enjoy this motivational video. :)`,
+      "https://i.ytimg.com/an_webp/o3K_HbpWNpg/mqdefault_6s.webp?du=3000&sqp=CPD9xJMG&rs=AOn4CLCgLMxasUJZnmUFtPFFas3b9KOwEA",
+    description: `Communication is critical to success in business and in life. Concerned about an upcoming interview? Anxious about speaking up during a meeting? Learn and practice techniques that will help you speak spontaneously with greater confidence and clarity. Matt Abrahams is a lecturer of strategic communication at Stanford GSB and the host of "Think Fast, Talk Smart: The Podcast," a show with more tips and best practices on becoming a more engaging speaker.`,
   },
 ];

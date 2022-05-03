@@ -1,7 +1,7 @@
 .hero-container {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     background: url(../../assets/hero-image.jpg);
     background-size:cover;
     padding: 2rem;
@@ -22,7 +22,7 @@
     text-align: center;
     color: var(--secondary-dark);
     background-color: var(--primary-dark);
-    width: 25%;
+    width: 30%;
     height: fit-content;
     padding: 1rem;
   }
@@ -50,4 +50,22 @@
     padding: 0 0.5rem;
   }
 
-  
+  @media screen and (max-width:600px){
+    .hero-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      background: url(../../assets/mobile-view-hero-image.jpg);
+      background-size:cover;
+      padding: 2rem;
+    }
+    .content {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:900px){
+    .hero-container {
+      justify-content: flex-start;
+    }
+  }

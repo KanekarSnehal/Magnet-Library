@@ -53,3 +53,11 @@
     font-size: var(--size-14);
 
 }
+
+@media screen and (max-width:768px){
+    .display-playlist-container{
+        height: 25rem;
+        min-width: 100%;
+        
+    }
+}
