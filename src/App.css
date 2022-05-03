@@ -21,7 +21,8 @@
   .main-container {
     grid-area: main;
     overflow-y: scroll;
-   
+    height: 100vh;
+    padding-bottom: 5rem;
   }
   
   .main-title {

@@ -59,3 +59,9 @@
     background-color: transparent;
     border: none;
 }
+
+@media screen and (max-width:768px){
+    .form-container {
+        width: 100%;
+    }
+}
