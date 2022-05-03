@@ -24,6 +24,12 @@ export const ShowOptions = ({ video }) => {
   const inWatchLater = watchLater.some(
     (watchlaterVideo) => watchlaterVideo._id === video._id
   );
+  const handleShowModal = (e) => {
+    if (isAuthenticated) {
+      e.stopPropagation();
+      setShowModal(true);
+    } else toast.warning("Please login first!");
+  };
   return (
     <>
       <div className="show-options-container ml-auto">
@@ -67,15 +73,7 @@ export const ShowOptions = ({ video }) => {
                 ></i>
               )}
             </li>
-            <li
-              className="show-items"
-              onClick={(e) => {
-                if (isAuthenticated) {
-                  e.stopPropagation();
-                  setShowModal(true);
-                } else toast.warning("Please login first!");
-              }}
-            >
+            <li className="show-items" onClick={handleShowModal}>
               <i className="bx bx-list-plus"></i>
             </li>
           </ul>
