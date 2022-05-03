@@ -33,8 +33,6 @@ export const dataReducer = (state, action) => {
       return { ...state, videos: payload };
     case GET_VIDEO:
       return { ...state, video: payload };
-    case LOADING:
-      return { ...state, loading: true };
     case FILTER_CATEGORY:
       return { ...state, filterByCategory: payload };
     case SEARCH:

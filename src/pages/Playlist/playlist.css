@@ -6,3 +6,13 @@
     grid-template-areas: "list video";
     height: 90vh;
 }
+
+@media screen and (max-width:768px){
+    .playlist-container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+    }
+    
+}

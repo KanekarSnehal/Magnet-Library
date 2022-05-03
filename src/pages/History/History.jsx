@@ -14,13 +14,16 @@ export const History = () => {
     <div className="main-display">
       <SideBar />
       <div className="main">
-        <h4 className="text-center">History ({history.length})</h4>
-        <button
-          className="btn primary-btn clear-all-btn"
-          onClick={() => clearHistory(dataDispatch)}
-        >
-          CLEAR ALL
-        </button>
+        <div className="history-info-container">
+          <h4 className="text-center">History ({history.length})</h4>
+          <button
+            className="btn primary-btn clear-all-btn"
+            onClick={() => clearHistory(dataDispatch)}
+          >
+            CLEAR ALL
+          </button>
+        </div>
+
         <div className="history-video-container">
           {history?.map((video) => (
             <HorizontalCard

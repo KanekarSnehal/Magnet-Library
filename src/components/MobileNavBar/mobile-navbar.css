@@ -1,0 +1,22 @@
+.mobile-navbar-container{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .mobile-navbar-container{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffff;
+        height: 4rem;
+        padding: 0 1.5rem;
+    }
+    .mobile-bar-items{
+        font-size: 1.8rem;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

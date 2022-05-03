@@ -11,7 +11,7 @@ import {
   VideoDetailPage,
   History,
 } from "./pages/index";
-import { Header } from "./components";
+import { Header, MobileNavBar } from "./components";
 import { GuestRoute, ProtectedRoute } from "./utilities/routes";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
@@ -37,6 +37,7 @@ function App() {
           <Route path="/history" element={<History />} />
         </Route>
       </Routes>
+      <MobileNavBar />
     </Router>
   );
 }

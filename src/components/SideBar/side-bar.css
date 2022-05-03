@@ -28,3 +28,9 @@
     color:var(--primary-darker);
     font-weight: 900;
 }
+
+@media screen and (max-width: 768px){
+.side-bar-container{
+   display: none;
+}
+}

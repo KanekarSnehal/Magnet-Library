@@ -8,4 +8,14 @@
     grid-area: main;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-display{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-areas: "main";
+    }
 }

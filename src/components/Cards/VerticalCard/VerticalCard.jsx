@@ -17,7 +17,7 @@ export const VerticalCard = ({ video }) => {
           className="avatar avatar-xs-size"
           alt="avatar"
         />
-        <div className="video-text mx-8">
+        <div className="video-text">
           <p className="card-title ">{video.title}</p>
           <span className="card-author">{video.creator}</span>
         </div>

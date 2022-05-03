@@ -1,17 +1,46 @@
 .horizontal-card-container{
     height: 8rem;
     margin: 0.5rem 0;
+    gap: 0.5rem;
+    transition: box-shadow .4s ease-in;
 }
 
 .horizontal-card-container .card-image {
-    width: 15rem;
+    width: 30%;
     height: 100%;
+    object-fit: cover;
 }
 
 .card-details{
    padding: 1rem;
+   overflow: hidden;
 }
 
-.link{
-    width: fit-content;
+.card-image{
+    cursor: pointer;
+}
+
+.card-title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+    .card-details{
+        overflow: hidden;
+    }
+    .card-title{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .horizontal-card-container{
+        gap: 0rem;
+        overflow: hidden;
+    }
+    .horizontal-card-container .card-image {
+        width: 50%;
+    }
+    
 }

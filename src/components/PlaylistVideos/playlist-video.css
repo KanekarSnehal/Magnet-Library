@@ -6,3 +6,10 @@
     padding: 0.5rem;
     min-width: 30rem;
 }
+
+@media screen and (max-width:768px){
+    .playlist-video-container{
+        height: 25rem;
+        min-width: 100%;
+    }
+}
