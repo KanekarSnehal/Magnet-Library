@@ -1,6 +1,6 @@
 .loader {
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: 40%;
     z-index: 1;
     width: 10rem;
@@ -20,4 +20,18 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  @media screen and (max-width:640px){
+    .loader {
+      left: 35%;
+      top: 40%;
+    }
+  }
+
+  @media screen and (max-width:440px){
+    .loader {
+      left: 30%;
+      top: 45%;
+    }
   }

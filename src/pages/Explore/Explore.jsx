@@ -35,9 +35,7 @@ export const Explore = () => {
                 <VerticalCard key={video._id} video={video} />
               ))
             ) : (
-              <div className="overlay">
-                <Loader />
-              </div>
+              <Loader />
             )}
           </div>
         </div>
