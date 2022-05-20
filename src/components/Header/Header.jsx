@@ -6,7 +6,7 @@ import "./header.css";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const user = JSON.parse(localStorage.getItem("user")) || null;
   const { dataDispatch } = useData();
 
   return (
@@ -61,7 +61,7 @@ export const Header = () => {
         <div>
           <Link to="/profile" className="user-profile">
             <i className="far fa-user badge-sm-size"></i>
-            <span>{user ? `Hi, ${user}` : `Login`}</span>
+            <span>{user ? `Hi, ${user.firstName}` : `Login`}</span>
           </Link>
         </div>
       </header>

@@ -7,6 +7,7 @@ export const Profile = () => {
   const logoutHandler = (e) => {
     authDispatch({ type: "USER_LOGOUT" });
     localStorage.removeItem("token");
+    localStorage.removeItem("user");
   };
 
   return (
