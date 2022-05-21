@@ -5,7 +5,8 @@
 
 A video streaming platform built using react
 
-</div>
+## </div>
+
 ## How to run the app locally?
 
 ```
