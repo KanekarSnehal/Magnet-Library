@@ -23,7 +23,6 @@ export function Login() {
         email: "adarshbalika@gmail.com",
         password: "adarshBalika123",
       });
-      console.log(data);
       localStorage.setItem("token", data.encodedToken);
       localStorage.setItem("user", JSON.stringify(data.foundUser));
       authDispatch({
