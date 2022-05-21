@@ -3,6 +3,7 @@ import "./profile.css";
 import { useAuth } from "../../context/index";
 
 export const Profile = () => {
+  const { authDispatch } = useAuth();
   const user = JSON.parse(localStorage.getItem("user"));
   const logoutHandler = (e) => {
     authDispatch({ type: "USER_LOGOUT" });
