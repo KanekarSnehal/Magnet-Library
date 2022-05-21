@@ -26,7 +26,6 @@ export const getHistory = async (dispatch) => {
 };
 
 export const addVideoToHistory = async (video, dispatch) => {
-  console.log("services");
   try {
     const response = await axios.post(historyUrl, { video }, config);
 

@@ -5,7 +5,8 @@
 
 A video streaming platform built using react
 
-</div>
+## </div>
+
 ## How to run the app locally?
 
 ```
@@ -49,4 +50,4 @@ Checkout the live demo [here](https://magnet-library.netlify.app/)
 
 # Preview
 
-![Preview](src/assets/magnet-library.gif)
+[Preview](https://res.cloudinary.com/dflebgpde/video/upload/v1653124446/magnet%20library/magnet-library_pdlchq.webm)
