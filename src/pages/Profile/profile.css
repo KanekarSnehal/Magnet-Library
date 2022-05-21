@@ -5,7 +5,17 @@
   }
 
 .profile-container{
-    width: 30%;
+    width: fit-content;
     margin: 0 auto;
     padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-container-row{
+  display: flex;
+  gap: 1rem;
 }
