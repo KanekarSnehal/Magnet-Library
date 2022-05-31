@@ -8,3 +8,4 @@ export { WatchLater } from "./WatchLater/WatchLater";
 export { Playlist } from "./Playlist/Playlist";
 export { VideoDetailPage } from "./VideoDetailPage/VideoDetailPage";
 export { History } from "./History/History";
+export { ScrollToTop } from "./ScrollToTop/ScrollToTop";

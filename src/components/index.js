@@ -11,3 +11,4 @@ export { SingleVideo } from "./SingleVideo/SingleVideo";
 export { ReadMore } from "./ReadMore/ReadMore";
 export { Loader } from "./Loader/Loader";
 export { MobileNavBar } from "./MobileNavBar/MobileNavBar";
+export { SkeletalLoading } from "./SkeletalLoading/SkeletalLoading";

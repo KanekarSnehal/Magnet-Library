@@ -19,7 +19,7 @@ export const VerticalCard = ({ video }) => {
         />
         <div className="video-text">
           <p className="card-title ">{video.title}</p>
-          <span className="card-author">{video.creator}</span>
+          <p className="card-author">{video.creator}</p>
         </div>
         <ShowOptions video={video} />
       </div>

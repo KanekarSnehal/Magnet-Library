@@ -6,6 +6,7 @@ export const Liked = () => {
   const {
     dataState: { liked },
   } = useData();
+
   return (
     <div className="main-display">
       <SideBar />

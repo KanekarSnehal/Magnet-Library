@@ -1,0 +1,29 @@
+.skeleton-image{
+    height: 10rem;
+    width: 100%;
+}
+
+.skeleton-text-section{
+    flex-grow: 1;
+}
+
+.skeleton-text{
+    height: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.skeleton {
+    animation: skeleton-animation 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes skeleton-animation {
+    0% {
+      background-color: #9c9b9b63;
+    }
+  
+    100% {
+      background-color: #d7d5d563;
+    }
+    
+  }
