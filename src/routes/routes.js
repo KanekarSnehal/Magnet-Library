@@ -12,6 +12,7 @@ import {
   Playlist,
   VideoDetailPage,
   History,
+  ScrollToTop,
 } from "../pages";
 import { Header, MobileNavBar } from "../components";
 import { ToastContainer } from "react-toastify";
@@ -29,6 +30,7 @@ export const GuestRoute = () => {
 export const AppRoutes = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <ToastContainer autoClose={2000} theme="colored" />
       <Routes>
