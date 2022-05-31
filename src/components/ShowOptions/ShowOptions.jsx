@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import { PlaylistModal } from "../PlaylistModal/PlaylistModal";
 import { toast } from "react-toastify";
+import { useOutsideClick } from "../../hooks";
 
 export const ShowOptions = ({ video }) => {
   const {
@@ -19,20 +20,23 @@ export const ShowOptions = ({ video }) => {
   const [isHidden, setIsHidden] = useState(true);
   const { isAuthenticated } = useAuth();
   const [showModal, setShowModal] = useState(false);
+  let domNode = useOutsideClick(() => setIsHidden(true));
 
   const isLikedVideo = liked.some((likedVideo) => likedVideo._id === video._id);
   const inWatchLater = watchLater.some(
     (watchlaterVideo) => watchlaterVideo._id === video._id
   );
+
   const handleShowModal = (e) => {
     if (isAuthenticated) {
       e.stopPropagation();
       setShowModal(true);
     } else toast.warning("Please login first!");
   };
+
   return (
     <>
-      <div className="show-options-container ml-auto">
+      <div className="show-options-container ml-auto" ref={domNode}>
         <i
           className="bx bx-dots-vertical-rounded ml-auto icon"
           onClick={() => setIsHidden(!isHidden)}
