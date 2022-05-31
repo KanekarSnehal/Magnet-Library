@@ -38,7 +38,41 @@ export const videos = [
 
     Steve Harvey is an American television and radio presenter, actor, author, businessman, and former stand–up comedian. He hosts The Steve Harvey Morning Show, Family Feud, Celebrity Family Feud and the Miss Universe competition, and upcoming limited-run arbitration-based court comedy, Judge Steve Harvey.`,
   },
+  {
+    _id: "x1YGCzmxEoo&ab",
+    title:
+      "Hair by Mr Bean of London | Episode 14 | Widescreen | Mr Bean Official",
+    creator: "Mr Bean",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024253/magnet%20library/AKedOLSOkEcl2lDSFEBtGFoNL8eLULm1RkXnBcb3i45uxA_s88-c-k-c0x00ffffff-no-rj_w4rr1t.jpg",
+    categoryName: "Comedies",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024025/magnet%20library/hq720_hr1koh.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/7nGz7xgGJzc/mqdefault_6s.webp?du=3000&sqp=CLWq7pIG&rs=AOn4CLBnbUxwvM29ig6uQQ26RdWg_VTRJQ",
+    description: `Bean ends up holding the fort for his hairdresser and gives several customers terrible haircuts. Bean then attends a fete but cheats at all the games and enters Teddy into a dog show. Later, after a train journey Bean loses his ticket so tries various ways to leave without being seen by the guards. His efforts fail as he ends up on a mail train bound for Moscow.Welcome to the official Mr Bean Channel. Here you will find all of your favourite Mr Bean moments from the classic series with Rowan Atkinson and his new animated adventures. Make sure to subscribe and never miss a Full Episode of Mr Bean, or Mr Bean Compilations and clips as well as originals including Mr Bean Comics.
+    `,
+  },
+  {
+    _id: "HZ-4K2IN7DY&ab",
+    title:
+      "Award Winning Hindi Short Film | The Pizza - Story Of Life & Relationships | Six Sigma Films",
+    creator: "Terribly Tiny Tales",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654023277/magnet%20library/AKedOLSBXjKdR2um146KvF8zLkLzztUGC_FOHmPYgj7p_s88-c-k-c0x00ffffff-no-rj_g2oq3x.jpg",
+    categoryName: "Short Flims",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654022973/magnet%20library/hq720_ozisxg.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/1wrI6yjqfd8/mqdefault_6s.webp?du=3000&sqp=CKjO7pIG&rs=AOn4CLBnVz6tiAfM9zwZuJoYOuUYbUGwsA",
+    description: `Kaande Pohe - A Maharashtrian snack traditionally served when a boy visits a girls' family for the first time in an arranged marriage set up. The day is called 'Kaande Pohe Cha Kaaryakaram'.
 
+    There is no data on this strategy's success rate. :) 
+    
+    Meet Sanjay and Manisha who are on their 'Kaande Pohe Cha Kaaryakaram'.
+    
+    Watch our latest short film starring Ahsaas Channa and Tushar Pandey to see what secrets Manisha has to reveal.`,
+  },
   {
     _id: "qp0HIF3SfI4",
     title: "How great leaders inspire action | Simon Sinek",
@@ -204,6 +238,19 @@ export const videos = [
     description: `"You Want First Place Come Play With Me, You Want Second Place Go Somewhere Else." KOBE BRYANT. The Mindset Of A Winner.
     Amazing Authors like Brendan Burchard, David Goggins, James Clear, Dale Carnegie, Stephen R. Covey, Nick Winter, Tara Westover, Mel Robbins, Steven Pressfield, Charles Duhigg, Elizabeth Gilbert, David Allen, Billy Alsbooks, Walter Bond, Kevin Kruse, and Zac Bissonnette.`,
   },
+  {
+    _id: "NobrEt1Zeco&ab",
+    title: "Miss To Mrs - A Short Film On Working Women | Why Not | Life Tak",
+    creator: "Life Tak",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654023026/magnet%20library/Ux-fKJQ-PVLqj8cxcBs1KR14zWC7KH9Wvw43WW1-JIf7jDSaJKbBkVErNQ_M5t2wL9PL6caC0w_s88-c-k-c0x00ffffff-no-rj_cmmcoc.jpg",
+    categoryName: "Short Flims",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654022797/magnet%20library/hq720_xp39zz.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/1wrI6yjqfd8/mqdefault_6s.webp?du=3000&sqp=CKjO7pIG&rs=AOn4CLBnVz6tiAfM9zwZuJoYOuUYbUGwsA",
+    description: `One call from HR got her thinking about who she really was and what she actually wants to do. Watch till the end to know what she decides.`,
+  },
 
   {
     _id: "7nGz7xgGJzc",
@@ -278,6 +325,21 @@ export const videos = [
     description: `Communication is critical to success in business and in life. Concerned about an upcoming interview? Anxious about speaking up during a meeting? Learn and practice techniques that will help you speak spontaneously with greater confidence and clarity. Matt Abrahams is a lecturer of strategic communication at Stanford GSB and the host of "Think Fast, Talk Smart: The Podcast," a show with more tips and best practices on becoming a more engaging speaker.`,
   },
   {
+    _id: "1F0CE1U5Wxo&ab",
+    title:
+      "Award Winning Hindi Short Film | The Pizza - Story Of Life & Relationships | Six Sigma Films",
+    creator: "Six Sigma Flims",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654023099/magnet%20library/AKedOLT5gsEVbsvnGmgzPiEGJJLY-A0VjTqDaqCzvtrrkQ_s88-c-k-c0x00ffffff-no-rj_cmpf6a.jpg",
+    categoryName: "Short Flims",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654022864/magnet%20library/hq720_deq035.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/1wrI6yjqfd8/mqdefault_6s.webp?du=3000&sqp=CKjO7pIG&rs=AOn4CLBnVz6tiAfM9zwZuJoYOuUYbUGwsA",
+    description: `Ranked as one of the 5 top favorite short films of the viewers in 2021 by "Film Critics Guild". An emotional drama about a widower old man in Mumbai. His only son lives in Australia and he is all alone in his big flat. One day he orders the Pizza but delivery boy finds that address is wrong. What happens next will touch your heart. This multiple award winning Hindi short movie is directed by Mahendra Dongre. This film on loneliness & anxiety of old people features Rajan Kajarolkar, Kshitij Bhandary.`,
+  },
+
+  {
     _id: "Wn_Kb3MR_cU&ab",
     title:
       "Build and Deploy a Modern Web 3.0 Blockchain App | Solidity, Smart Contracts, Crypto",
@@ -295,6 +357,31 @@ export const videos = [
     - How to connect a regular React.js application to the blockchain and pair it to your Ethereum wallet using MetaMask
     - You'll also learn how to write Smart Contracts on the Ethereum network using the #Solidity programming language
     - Essentially, in this single video, you'll learn how to create a full-fledged Web 3.0 application that allows users to send transactions through the blockchain`,
+  },
+  {
+    _id: "c7QYEedjb_o",
+    title:
+      "ABHISHEK UPMANYU |Friends, Crime, & The Cosmos | Stand-Up Comedy by Abhishek Upmanyu",
+    creator: "Abhishek Upmanyu",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024615/magnet%20library/AKedOLQFBbx9iNh-JQvEo61AHkcDrkbY-Pavaba-y2ck9w_s88-c-k-c0x00ffffff-no-rj_pfbttl.jpg",
+    categoryName: "Comedies",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024195/magnet%20library/hq720_nogm66.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/7nGz7xgGJzc/mqdefault_6s.webp?du=3000&sqp=CLWq7pIG&rs=AOn4CLBnbUxwvM29ig6uQQ26RdWg_VTRJQ",
+    description: `Jokes about Friends, Crime Patrol and The Cosmos. Hope you enjoy it!
+
+    Credits:
+    
+    Shot at: The Habitat Music & Cafe, Khar, Mumbai
+    Shot By: Myoho Films
+    Edited by: Abhishek Upmanyu & Karan Asnani
+    Sound Recording: The Habitat
+    Sound Mixing: Sohail Gandhi
+    Written by: Abhishek Upmanyu
+    
+    Special Thanks: Balraj Ghai, Vipul D Shah`,
   },
 
   {
@@ -389,5 +476,18 @@ export const videos = [
     🔗 Read all about their amazing story here: https://www.freecodecamp.org/news/myc...
     🔗 Check out the MyCodeSchool channel: https://www.youtube.com/user/mycodesc...
     🔗 Check out the MyCodeSchool website: http://mycodeschool.com/`,
+  },
+  {
+    _id: "2mSr6GgQV2Y&ab",
+    title: "JUDO Bean | Funny Clips | Mr Bean Official",
+    creator: "Mr Bean",
+    creatorImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024253/magnet%20library/AKedOLSOkEcl2lDSFEBtGFoNL8eLULm1RkXnBcb3i45uxA_s88-c-k-c0x00ffffff-no-rj_w4rr1t.jpg",
+    categoryName: "Comedies",
+    staticImage:
+      "https://res.cloudinary.com/dflebgpde/image/upload/v1654024116/magnet%20library/hqdefault_gyolzg.webp",
+    dynamicImage:
+      "https://i.ytimg.com/an_webp/7nGz7xgGJzc/mqdefault_6s.webp?du=3000&sqp=CLWq7pIG&rs=AOn4CLBnbUxwvM29ig6uQQ26RdWg_VTRJQ",
+    description: `Mr Bean tries his hand at martial arts, but is a little reluctant to be thrown to the ground!Welcome to the official Mr Bean Channel. Here you will find all of your favourite Mr Bean moments from the classic series with Rowan Atkinson and his new animated adventures. Make sure to subscribe and never miss a Full Episode of Mr Bean, or Mr Bean Compilations and clips as well as originals including Mr Bean Comics.`,
   },
 ];
