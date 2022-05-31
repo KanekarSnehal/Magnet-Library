@@ -31,6 +31,7 @@
     background-color:var(--secondary-light);
     border-radius: 50%;
 }
+
 .avatar-xs-size{
     height: 2.5rem;
     width: 2.5rem;
@@ -44,6 +45,9 @@
 
 .card-author{
     font-size: 0.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .video-text{
