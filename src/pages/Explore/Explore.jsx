@@ -1,5 +1,11 @@
 import React from "react";
-import { SideBar, Chips, VerticalCard, Loader } from "../../components";
+import {
+  SideBar,
+  Chips,
+  VerticalCard,
+  Loader,
+  SkeletalLoading,
+} from "../../components";
 import "./explore.css";
 import { useData } from "../../context";
 
@@ -30,13 +36,11 @@ export const Explore = () => {
         <div className="main">
           <Chips />
           <div className="vertical-card-wrapper">
-            {filteredVideos.length !== 0 ? (
-              filteredVideos.map((video) => (
-                <VerticalCard key={video._id} video={video} />
-              ))
-            ) : (
-              <Loader />
-            )}
+            {filteredVideos.length !== 0
+              ? filteredVideos.map((video) => (
+                  <VerticalCard key={video._id} video={video} />
+                ))
+              : [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)}
           </div>
         </div>
       </div>
