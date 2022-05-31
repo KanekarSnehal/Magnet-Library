@@ -3,11 +3,13 @@ import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth, useData } from "../../context";
 import "./header.css";
+import { useDocumentTitle } from "../../hooks";
 
 export const Header = () => {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user")) || null;
   const { dataDispatch } = useData();
+  useDocumentTitle();
 
   return (
     <>

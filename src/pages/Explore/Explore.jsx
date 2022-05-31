@@ -8,11 +8,9 @@ import {
 } from "../../components";
 import "./explore.css";
 import { useData } from "../../context";
-import { useDocumentTitle } from "../../hooks";
 
 export const Explore = () => {
   const { filteredVideos } = useData();
-  useDocumentTitle();
 
   return (
     <>

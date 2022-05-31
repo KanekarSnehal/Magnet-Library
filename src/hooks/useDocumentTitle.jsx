@@ -5,6 +5,7 @@ export const useDocumentTitle = () => {
   const { pathname } = useLocation();
 
   const validRoutes = [
+    "profile",
     "home",
     "explore",
     "liked",
