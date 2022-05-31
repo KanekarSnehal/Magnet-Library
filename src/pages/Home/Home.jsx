@@ -2,8 +2,11 @@ import React from "react";
 import { Categories } from "../../components";
 import { Link } from "react-router-dom";
 import "./home.css";
+import { useDocumentTitle } from "../../hooks";
 
 export const Home = () => {
+  useDocumentTitle();
+
   return (
     <main className="main-container">
       <div className="hero-container">

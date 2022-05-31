@@ -3,12 +3,14 @@ import { useData } from "../../context";
 import { SideBar, HorizontalCard } from "../../components";
 import "./history.css";
 import { deleteVideoFromHistory, clearHistory } from "../../services";
+import { useDocumentTitle } from "../../hooks";
 
 export const History = () => {
   const {
     dataState: { history },
     dataDispatch,
   } = useData();
+  useDocumentTitle();
 
   return (
     <div className="main-display">

@@ -1,6 +1,7 @@
 import React from "react";
 import "./profile.css";
 import { useAuth } from "../../context/index";
+import { useDocumentTitle } from "../../hooks";
 
 export const Profile = () => {
   const { authDispatch } = useAuth();
@@ -10,6 +11,7 @@ export const Profile = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
   };
+  useDocumentTitle();
 
   return (
     <>
