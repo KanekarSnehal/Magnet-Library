@@ -7,7 +7,7 @@ import { useDocumentTitle } from "../../hooks";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user")) || null;
+  const user = JSON.parse(localStorage.getItem("magnetLibraryUser")) || null;
   const { dataDispatch } = useData();
   useDocumentTitle();
 

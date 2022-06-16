@@ -1,5 +1,5 @@
 import axios from "axios";
-import { videoUrl } from "../utils/index";
+import { videoUrl } from "../utils";
 import { videoConstants } from "../utils/dataActions";
 import { toast } from "react-toastify";
 

@@ -50,7 +50,7 @@ export const PlaylistList = ({ setCurrentPlaylistId }) => {
                 {playlist.videos.length} Videos
               </p>
               <i
-                class="bx bx-trash icon"
+                className="bx bx-trash icon"
                 onClick={() => {
                   deletePlaylist(playlist._id, dataDispatch);
                   setCurrentPlaylistId("");

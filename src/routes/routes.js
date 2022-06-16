@@ -18,13 +18,10 @@ import { Header, MobileNavBar } from "../components";
 import { ToastContainer } from "react-toastify";
 
 export const ProtectedRoute = () => {
-  const { isAuthenticated } = useAuth();
-  return isAuthenticated ? <Outlet /> : <Navigate to={"/login"} />;
-};
-
-export const GuestRoute = () => {
-  const { isAuthenticated } = useAuth();
-  return !isAuthenticated ? <Outlet /> : <Navigate to={"/"} />;
+  const {
+    authState: { authToken },
+  } = useAuth();
+  return authToken ? <Outlet /> : <Navigate to={"/login"} />;
 };
 
 export const AppRoutes = () => {
@@ -37,10 +34,8 @@ export const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/explore/:id" element={<VideoDetailPage />} />
-        <Route element={<GuestRoute />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/profile" element={<Profile />} />
           <Route path="/liked" element={<Liked />} />
