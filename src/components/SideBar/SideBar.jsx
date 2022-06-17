@@ -1,35 +1,37 @@
 import React from "react";
 import "./side-bar.css";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const SideBar = () => {
-  const navigate = useNavigate();
+  const isActiveClass = ({ isActive }) =>
+    `side-bar-items ${isActive && "active"}`;
 
   return (
     <aside className="side-bar-container">
-      <ul className="my-16">
-        <li className="side-bar-items" onClick={() => navigate("/")}>
-          <i className="bx bx-home"></i>Home
-        </li>
-        <li className="side-bar-items" onClick={() => navigate("/explore")}>
-          <i className="bx bx-compass"></i>
-          Explore
-        </li>
-        <li className="side-bar-items" onClick={() => navigate("/playlist")}>
-          <i className="bx bx-play-circle"></i>Playlists
-        </li>
-        <li className="side-bar-items" onClick={() => navigate("/liked")}>
-          <i className="bx bx-like"></i>
-          <span>Liked Videos</span>
-        </li>
-        <li className="side-bar-items" onClick={() => navigate("/watchlater")}>
-          <i className="bx bx-time-five"></i>
-          Watch Later
-        </li>
-        <li className="side-bar-items" onClick={() => navigate("/history")}>
-          <i className="bx bx-history"></i>History
-        </li>
-      </ul>
+      <NavLink className={isActiveClass} to="/">
+        <i className="bx bx-home"></i>
+        <span className="nav-title">Home</span>
+      </NavLink>
+      <NavLink className={isActiveClass} to="/explore">
+        <i className="bx bx-compass"></i>
+        <span className="nav-title">Explore</span>
+      </NavLink>
+      <NavLink className={isActiveClass} to="/playlist">
+        <i className="bx bx-play-circle"></i>
+        <span className="nav-title">Playlists</span>
+      </NavLink>
+      <NavLink className={isActiveClass} to="/liked">
+        <i className="bx bx-like"></i>
+        <span className="nav-title">Liked Videos</span>
+      </NavLink>
+      <NavLink className={isActiveClass} to="/watchlater">
+        <i className="bx bx-time-five"></i>
+        <span className="nav-title"> Watch Later</span>
+      </NavLink>
+      <NavLink className={isActiveClass} to="/history">
+        <i className="bx bx-history"></i>
+        <span className="nav-title">History</span>
+      </NavLink>
     </aside>
   );
 };

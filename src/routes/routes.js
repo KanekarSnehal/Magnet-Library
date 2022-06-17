@@ -14,7 +14,7 @@ import {
   History,
   ScrollToTop,
 } from "../pages";
-import { Header, MobileNavBar } from "../components";
+import { Header } from "../components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -45,7 +45,6 @@ export const AppRoutes = () => {
           <Route path="/history" element={<History />} />
         </Route>
       </Routes>
-      <MobileNavBar />
     </Router>
   );
 };
