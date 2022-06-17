@@ -16,6 +16,7 @@ import {
 } from "../pages";
 import { Header, MobileNavBar } from "../components";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const ProtectedRoute = () => {
   const {
