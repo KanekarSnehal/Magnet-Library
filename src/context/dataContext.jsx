@@ -20,6 +20,7 @@ const initialDataState = {
   searchQuery: null,
   filterByCategory: "ALL",
   video: null,
+  loading: false,
 };
 const DataProvider = ({ children }) => {
   const [dataState, dataDispatch] = useReducer(dataReducer, initialDataState);

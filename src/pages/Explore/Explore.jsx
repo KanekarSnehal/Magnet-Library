@@ -10,7 +10,10 @@ import "./explore.css";
 import { useData } from "../../context";
 
 export const Explore = () => {
-  const { filteredVideos } = useData();
+  const {
+    dataState: { loading },
+    filteredVideos,
+  } = useData();
 
   return (
     <>
@@ -36,11 +39,15 @@ export const Explore = () => {
         <div className="main">
           <Chips />
           <div className="vertical-card-wrapper">
-            {filteredVideos.length !== 0
-              ? filteredVideos.map((video) => (
-                  <VerticalCard key={video._id} video={video} />
-                ))
-              : [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)}
+            {loading ? (
+              [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)
+            ) : filteredVideos.length === 0 ? (
+              <h4 className="mx-16">No videos present</h4>
+            ) : (
+              filteredVideos.map((video) => (
+                <VerticalCard key={video._id} video={video} />
+              ))
+            )}
           </div>
         </div>
       </div>
