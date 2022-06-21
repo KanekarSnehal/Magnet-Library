@@ -12,7 +12,7 @@ export const SideBar = () => {
         <i className="bx bx-home"></i>
         <span className="nav-title">Home</span>
       </NavLink>
-      <NavLink className={isActiveClass} to="/explore">
+      <NavLink className={isActiveClass} to="/explore" end>
         <i className="bx bx-compass"></i>
         <span className="nav-title">Explore</span>
       </NavLink>
