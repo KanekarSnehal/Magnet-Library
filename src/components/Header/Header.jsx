@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useAuth, useData } from "../../context";
+import { useData } from "../../context";
 import "./header.css";
 import { useDocumentTitle } from "../../hooks";
+import logo from "../../assets/icon.png";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Header = () => {
     <>
       <header className="header-container">
         <Link to="/" className="logo-container">
-          <img src="icon.png" alt="logo" className="brand-logo" />
+          <img src={logo} alt="logo" className="brand-logo" />
           <span className="brand-name ">Magnet Library </span>
         </Link>
 
