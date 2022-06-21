@@ -38,17 +38,17 @@ export const Explore = () => {
         <SideBar />
         <div className="main">
           <Chips />
-          <div className="vertical-card-wrapper">
-            {loading ? (
-              [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)
-            ) : filteredVideos.length === 0 ? (
-              <h4 className="mx-16">No videos present</h4>
-            ) : (
-              filteredVideos.map((video) => (
-                <VerticalCard key={video._id} video={video} />
-              ))
-            )}
-          </div>
+          {filteredVideos.length === 0 && !loading ? (
+            <h4 className="text-center my-16">No videos found!</h4>
+          ) : (
+            <div className="vertical-card-wrapper">
+              {loading
+                ? [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)
+                : filteredVideos.map((video) => (
+                    <VerticalCard key={video._id} video={video} />
+                  ))}
+            </div>
+          )}
         </div>
       </div>
     </>
