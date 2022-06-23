@@ -10,7 +10,7 @@ export const Home = () => {
         <div className="content">
           <h3>Get Unlimited Access</h3>
           <p className="p-md">
-            Unlock access to our library of over million videos
+            Unlock access to our library of varieties of videos
           </p>
           <Link to="explore">
             <button className="btn secondary-btn text-bold-weight">
