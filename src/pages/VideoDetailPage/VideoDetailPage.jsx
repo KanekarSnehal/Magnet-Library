@@ -6,10 +6,10 @@ import { useData } from "../../context";
 export const VideoDetailPage = () => {
   const {
     dataState: { video, videos },
-    dataDispatch,
   } = useData();
 
-  const otherVideos = videos.filter((videoItem) => videoItem._id !== video._id);
+  const otherVideos =
+    video && videos?.filter((videoItem) => videoItem._id !== video._id);
 
   return (
     <div className="main-display">
@@ -17,9 +17,10 @@ export const VideoDetailPage = () => {
       <div className="video-details-conatiner">
         <SingleVideo />
         <div className="other-videos-container">
-          {otherVideos.map((video) => (
-            <VerticalCard key={video._id} video={video} />
-          ))}
+          {otherVideos &&
+            otherVideos.map((video) => (
+              <VerticalCard key={video._id} video={video} />
+            ))}
         </div>
       </div>
     </div>
