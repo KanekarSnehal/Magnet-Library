@@ -20,12 +20,7 @@ export const getVideos = async (dispatch) => {
 
 export const getSingleVideo = async (dispatch, videoID) => {
   try {
-    const response = await axios.get(`/api/video/${videoID}`, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await axios.get(`/api/video/${videoID}`);
     if (response.status === 200) {
       dispatch({ type: GET_VIDEO, payload: response.data.video });
     }
