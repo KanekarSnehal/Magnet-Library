@@ -6,13 +6,16 @@ import { useAuth } from "../../context/authContext";
 
 export const Categories = () => {
   const [categories, setCategories] = useState([]);
-  const { isAuthenticated } = useAuth();
+  const {
+    authState: { authToken },
+  } = useAuth();
+
   useEffect(async () => {
     if (categories.length === 0) {
       const res = await getCategories();
       setCategories(res.data.categories);
     }
-  }, [isAuthenticated]);
+  }, [authToken]);
 
   return (
     <div>

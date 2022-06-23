@@ -13,6 +13,7 @@ export {
   watchLaterUrl,
   playlistUrl,
   historyUrl,
+  getConfig,
 } from "./apiUrls";
 
 export { compose, getSearchResults, filterByCategory } from "./helper";

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { playlistUrl } from "../utils/index";
+import { playlistUrl, getConfig } from "../utils";
 import { playlistConstants } from "../utils/dataActions";
 import { toast } from "react-toastify";
 
@@ -12,13 +12,9 @@ const {
   DELETE_VIDEO_FROM_PLAYLIST,
 } = playlistConstants;
 
-const config = {
-  headers: { authorization: localStorage.getItem("token") },
-};
-
 export const getPlaylists = async (dispatch) => {
   try {
-    const response = await axios.get(playlistUrl, config);
+    const response = await axios.get(playlistUrl, getConfig());
     if (response.status === 200) {
       dispatch({ type: GET_PLAYLISTS, payload: response.data.playlists });
       toast.success("Playlist Loaded!");
@@ -30,7 +26,7 @@ export const getPlaylists = async (dispatch) => {
 
 export const addPlaylist = async (playlist, dispatch) => {
   try {
-    const response = await axios.post(playlistUrl, { playlist }, config);
+    const response = await axios.post(playlistUrl, { playlist }, getConfig());
     if (response.status === 201) {
       dispatch({ type: ADD_PLAYLIST, payload: response.data.playlists });
       toast.success("Created Playlist!");
@@ -42,7 +38,10 @@ export const addPlaylist = async (playlist, dispatch) => {
 
 export const deletePlaylist = async (playlistID, dispatch) => {
   try {
-    const response = await axios.delete(`${playlistUrl}/${playlistID}`, config);
+    const response = await axios.delete(
+      `${playlistUrl}/${playlistID}`,
+      getConfig()
+    );
     if (response.status === 200) {
       dispatch({ type: DELETE_PLAYLIST, payload: response.data.playlists });
       toast.success("Deleted Playlist!");
@@ -54,7 +53,10 @@ export const deletePlaylist = async (playlistID, dispatch) => {
 
 export const getPlaylistByID = async (playlistID) => {
   try {
-    const response = await axios.get(`${playlistUrl}/${playlistID}`, config);
+    const response = await axios.get(
+      `${playlistUrl}/${playlistID}`,
+      getConfig()
+    );
     if (response.status === 200) {
       dispatch({ type: GET_PLAYLIST_BY_ID, payload: response.data.playlist });
     }
@@ -68,7 +70,7 @@ export const addVideoToPlaylist = async (playlistID, video, dispatch) => {
     const response = await axios.post(
       `${playlistUrl}/${playlistID}`,
       { video },
-      config
+      getConfig()
     );
     if (response.status === 201) {
       dispatch({
@@ -90,7 +92,7 @@ export const deleteVideoFromPlaylist = async (
   try {
     const response = await axios.delete(
       `${playlistUrl}/${playlistID}/${videoID}`,
-      config
+      getConfig()
     );
     if (response.status === 200) {
       dispatch({

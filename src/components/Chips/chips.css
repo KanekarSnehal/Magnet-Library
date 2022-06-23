@@ -32,4 +32,8 @@
     .btn{
         padding: 0.2rem 0.5rem;
     }
+    .chips-container{
+        width: 100%;
+        left: 0;
+    }
 }

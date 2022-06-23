@@ -3,7 +3,7 @@ import "./vertical-card.css";
 import { ShowOptions } from "../../index";
 import { Link } from "react-router-dom";
 
-export const VerticalCard = ({ video }) => {
+export const VerticalCard = ({ video, showOptions }) => {
   return (
     <div className="vertical-card-container">
       <Link to={`/explore/${video._id}`}>
@@ -21,7 +21,7 @@ export const VerticalCard = ({ video }) => {
           <p className="card-title ">{video.title}</p>
           <p className="card-author">{video.creator}</p>
         </div>
-        <ShowOptions video={video} />
+        {showOptions && <ShowOptions video={video} />}
       </div>
     </div>
   );
