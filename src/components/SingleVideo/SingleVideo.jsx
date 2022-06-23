@@ -10,7 +10,7 @@ import { addVideoToHistory } from "../../services";
 
 export const SingleVideo = () => {
   const {
-    dataState: { video },
+    dataState: { video, history },
     dataDispatch,
   } = useData();
 
@@ -21,8 +21,12 @@ export const SingleVideo = () => {
   }, []);
 
   const handleHistory = () => {
-    addVideoToHistory(video, dataDispatch);
+    const isPresentInHistory = history.some(
+      (videoItem) => videoItem._id === video._id
+    );
+    if (!isPresentInHistory) addVideoToHistory(video, dataDispatch);
   };
+
   return (
     <>
       {video && (

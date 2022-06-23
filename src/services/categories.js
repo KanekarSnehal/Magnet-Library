@@ -1,14 +1,11 @@
 import axios from "axios";
-
-const config = {
-  headers: { authorization: localStorage.getItem("token") },
-};
+import { getConfig } from "../utils";
 
 // Categories
 export const getCategories = async () => {
-  return await axios.get(`/api/categories`, config);
+  return await axios.get(`/api/categories`, getConfig());
 };
 
 export const getCategory = async (categoryID) => {
-  return await axios.get(`/api/category/${categoryID}`, config);
+  return await axios.get(`/api/category/${categoryID}`, getConfig());
 };

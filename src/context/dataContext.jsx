@@ -20,29 +20,30 @@ const initialDataState = {
   searchQuery: null,
   filterByCategory: "ALL",
   video: null,
+  loading: false,
 };
 const DataProvider = ({ children }) => {
   const [dataState, dataDispatch] = useReducer(dataReducer, initialDataState);
-  const { isAuthenticated } = useAuth();
+  const {
+    authState: { authToken },
+  } = useAuth();
 
   useEffect(() => {
     if (dataState.videos.length === 0) getVideos(dataDispatch);
   }, []);
 
   useEffect(() => {
-    if (dataState.liked.length === 0 && isAuthenticated)
-      getLikedVideos(dataDispatch);
-  }, [isAuthenticated]);
+    if (dataState.liked.length === 0 && authToken) getLikedVideos(dataDispatch);
+  }, [authToken]);
 
   useEffect(() => {
-    if (dataState.watchLater.length === 0 && isAuthenticated)
+    if (dataState.watchLater.length === 0 && authToken)
       getWatchLaterVideos(dataDispatch);
-  }, [isAuthenticated]);
+  }, [authToken]);
 
   useEffect(() => {
-    if (dataState.history.length === 0 && isAuthenticated)
-      getHistory(dataDispatch);
-  }, [isAuthenticated]);
+    if (dataState.history.length === 0 && authToken) getHistory(dataDispatch);
+  }, [authToken]);
 
   const filteredVideos = compose(filterByCategory, getSearchResults)(
     dataState,

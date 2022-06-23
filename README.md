@@ -3,7 +3,7 @@
 
 ## [Magnet Library](https://magnet-library.netlify.app/)
 
-A video streaming platform built using react
+Magnet library is an on demand video viewing platform for all your content related needs. It has a wide range of genres available to watch from comedies to motivational. It has something to view for every age group.
 
 ## </div>
 

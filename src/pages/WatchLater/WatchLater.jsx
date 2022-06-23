@@ -6,6 +6,7 @@ export const WatchLater = () => {
   const {
     dataState: { watchLater },
   } = useData();
+
   return (
     <div className="main-display">
       <SideBar />

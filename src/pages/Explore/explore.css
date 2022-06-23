@@ -1,6 +1,6 @@
 .main-display{
     display: grid;
-    grid-template-columns: 6.25rem 1fr;
+    grid-template-columns: 7.25rem 1fr;
     grid-template-areas: "sidebar main";
 }
 
@@ -10,7 +10,6 @@
     flex-direction: column;
     padding-bottom: 5rem;
 }
-
 
 @media screen and (max-width: 768px){
     .main-display{

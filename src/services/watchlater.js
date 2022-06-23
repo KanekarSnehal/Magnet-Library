@@ -1,18 +1,14 @@
 import axios from "axios";
-import { watchLaterUrl } from "../utils/index";
+import { watchLaterUrl, getConfig } from "../utils";
 import { watchLaterConstants } from "../utils/dataActions";
 import { toast } from "react-toastify";
 
 const { ADD_TO_WATCH_LATER, REMOVE_FROM_WATCH_LATER, GET_WATCH_LATER_VIDEOS } =
   watchLaterConstants;
 
-const config = {
-  headers: { authorization: localStorage.getItem("token") },
-};
-
 export const getWatchLaterVideos = async (dispatch) => {
   try {
-    const response = await axios.get(watchLaterUrl, config);
+    const response = await axios.get(watchLaterUrl, getConfig());
     if (response.status === 200) {
       dispatch({
         type: GET_WATCH_LATER_VIDEOS,
@@ -26,7 +22,7 @@ export const getWatchLaterVideos = async (dispatch) => {
 
 export const addToWatchLater = async (video, dispatch) => {
   try {
-    const response = await axios.post(watchLaterUrl, { video }, config);
+    const response = await axios.post(watchLaterUrl, { video }, getConfig());
 
     if (response.status === 201) {
       dispatch({ type: ADD_TO_WATCH_LATER, payload: response.data.watchlater });
@@ -39,7 +35,10 @@ export const addToWatchLater = async (video, dispatch) => {
 
 export const removeFromWatchLater = async (videoID, dispatch) => {
   try {
-    const response = await axios.delete(`${watchLaterUrl}/${videoID}`, config);
+    const response = await axios.delete(
+      `${watchLaterUrl}/${videoID}`,
+      getConfig()
+    );
     if (response.status === 200) {
       dispatch({
         type: REMOVE_FROM_WATCH_LATER,

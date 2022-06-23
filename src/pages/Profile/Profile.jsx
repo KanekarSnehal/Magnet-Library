@@ -1,14 +1,20 @@
 import React from "react";
 import "./profile.css";
 import { useAuth } from "../../context/index";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export const Profile = () => {
-  const { authDispatch } = useAuth();
-  const user = JSON.parse(localStorage.getItem("user"));
+  const { authState, setAuthState } = useAuth();
+  const { authUser } = authState;
+  const navigate = useNavigate();
+
   const logoutHandler = (e) => {
-    authDispatch({ type: "USER_LOGOUT" });
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
+    localStorage.removeItem("magnetLibraryToken");
+    localStorage.removeItem("magnetLibraryUser");
+    setAuthState({ ...authState, authToken: null, authUser: null });
+    navigate("/");
+    toast.success(`Logged Out Successfully`);
   };
 
   return (
@@ -18,15 +24,15 @@ export const Profile = () => {
       <div className="profile-container">
         <div className="profile-container-row">
           <p className="px-16 text-bold-weight">First Name</p>
-          <p>{user.firstName}</p>
+          <p>{authUser.firstName}</p>
         </div>
         <div className="profile-container-row">
           <p className="px-16 text-bold-weight">Last Name</p>
-          <p>{user.lastName}</p>
+          <p>{authUser.lastName}</p>
         </div>
         <div className="profile-container-row">
           <p className="px-16 text-bold-weight">Email</p>
-          <p>{user.email}</p>
+          <p>{authUser.email}</p>
         </div>
         <button className="btn primary-btn" onClick={logoutHandler}>
           Logout
