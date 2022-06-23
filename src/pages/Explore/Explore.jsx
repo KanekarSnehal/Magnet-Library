@@ -45,7 +45,7 @@ export const Explore = () => {
               {loading
                 ? [...Array(12)].map((_, id) => <SkeletalLoading key={id} />)
                 : filteredVideos.map((video) => (
-                    <VerticalCard key={video._id} video={video} />
+                    <VerticalCard key={video._id} video={video} showOptions />
                   ))}
             </div>
           )}
