@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/icon.png" width="150" title="Magnet Library Logo">
+  <img src="src/assets/icon.png" width="150" title="Magnet Library Logo">
 
 ## [Magnet Library](https://magnet-library.netlify.app/)
 
