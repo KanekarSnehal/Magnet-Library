@@ -70,6 +70,6 @@ Checkout the live demo [here](https://magnet-library.netlify.app/)
 <img src="src/assets/video-explore-page.png" width="100%" title="explore_page"/>
 <img src="src/assets/single-video-page.png" width="100%" title="single_video_page"/>
 <img src="src/assets/video-playlist-page.png" width="100%" title="playlist_page"/>
-<img src="src/assets/watch-later-page.png" width="49%" title="watch_later_page"/>
-<img src="src/assets/liked-page.png" width="49%" title="liked_page"/>
+<img src="src/assets/watch-later-page.png" width="100%" title="watch_later_page"/>
+<img src="src/assets/liked-page.png" width="100%" title="liked_page"/>
 <img src="src/assets/history-page.png" width="100%" title="history_page"/>
