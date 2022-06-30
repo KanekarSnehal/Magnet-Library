@@ -18,7 +18,7 @@ export const SingleVideo = () => {
 
   useEffect(() => {
     getSingleVideo(dataDispatch, id);
-  }, []);
+  }, [video]);
 
   const handleHistory = () => {
     const isPresentInHistory = history.some(

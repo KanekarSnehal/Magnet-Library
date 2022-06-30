@@ -12,7 +12,6 @@ export const getLikedVideos = async (dispatch) => {
       dispatch({ type: GET_LIKED_VIDEOS, payload: response.data.likes });
     }
   } catch (e) {
-    console.log(e);
     toast.error(e?.response?.data?.errors[0]);
   }
 };

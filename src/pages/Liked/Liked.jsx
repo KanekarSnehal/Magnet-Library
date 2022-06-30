@@ -14,7 +14,7 @@ export const Liked = () => {
         <h4 className="text-center">Liked Videos ({liked.length})</h4>
         <div className="vertical-card-wrapper">
           {liked?.map((video) => (
-            <VerticalCard key={video._id} video={video} />
+            <VerticalCard key={video._id} video={video} showOptions />
           ))}
         </div>
       </div>

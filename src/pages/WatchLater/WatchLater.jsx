@@ -16,7 +16,7 @@ export const WatchLater = () => {
         </h4>
         <div className="vertical-card-wrapper">
           {watchLater?.map((video) => (
-            <VerticalCard key={video._id} video={video} />
+            <VerticalCard key={video._id} video={video} showOptions />
           ))}
         </div>
       </div>
