@@ -3,7 +3,7 @@ import { Categories } from "../../components";
 import { Link } from "react-router-dom";
 import "./home.css";
 
-export const Home = () => {
+const Home = () => {
   return (
     <main className="main-container">
       <div className="hero-container">
@@ -29,3 +29,5 @@ export const Home = () => {
     </main>
   );
 };
+
+export default Home;

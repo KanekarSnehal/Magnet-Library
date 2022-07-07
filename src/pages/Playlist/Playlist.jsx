@@ -3,7 +3,7 @@ import { SideBar, PlaylistList, PlaylistVideos } from "../../components";
 import "./playlist.css";
 import { useState } from "react";
 
-export const Playlist = () => {
+const Playlist = () => {
   const [currentPlaylistId, setCurrentPlaylistId] = useState(null);
 
   return (
@@ -19,3 +19,5 @@ export const Playlist = () => {
     </div>
   );
 };
+
+export default Playlist;

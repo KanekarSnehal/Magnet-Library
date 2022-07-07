@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSignupHandler } from "../../hooks";
 import { BiShow, BiHide } from "react-icons/bi";
 
-export function Signup() {
+export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 

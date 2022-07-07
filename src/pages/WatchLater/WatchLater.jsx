@@ -2,7 +2,7 @@ import React from "react";
 import { useData } from "../../context";
 import { SideBar, VerticalCard } from "../../components";
 
-export const WatchLater = () => {
+const WatchLater = () => {
   const {
     dataState: { watchLater },
   } = useData();
@@ -23,3 +23,5 @@ export const WatchLater = () => {
     </div>
   );
 };
+
+export default WatchLater;

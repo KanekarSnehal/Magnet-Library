@@ -3,7 +3,7 @@ import { VerticalCard, SideBar, SingleVideo } from "../../components";
 import "./video-detail.css";
 import { useData } from "../../context";
 
-export const VideoDetailPage = () => {
+const VideoDetailPage = () => {
   const {
     dataState: { video, videos },
   } = useData();
@@ -26,3 +26,5 @@ export const VideoDetailPage = () => {
     </div>
   );
 };
+
+export default VideoDetailPage;

@@ -13,7 +13,9 @@ export const SingleVideo = () => {
     dataState: { video, history },
     dataDispatch,
   } = useData();
-
+  const {
+    authState: { authToken },
+  } = useAuth();
   const { id } = useParams();
 
   useEffect(() => {
@@ -24,7 +26,8 @@ export const SingleVideo = () => {
     const isPresentInHistory = history.some(
       (videoItem) => videoItem._id === video._id
     );
-    if (!isPresentInHistory) addVideoToHistory(video, dataDispatch);
+    if (!isPresentInHistory && authToken)
+      addVideoToHistory(video, dataDispatch);
   };
 
   return (

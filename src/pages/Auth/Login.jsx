@@ -6,7 +6,7 @@ import { useAuth } from "../../context";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export function Login() {
+export default function Login() {
   const { authState, setAuthState } = useAuth();
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
   const [loginError, setLoginError] = useState(null);

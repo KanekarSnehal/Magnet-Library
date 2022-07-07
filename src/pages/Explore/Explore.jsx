@@ -9,7 +9,7 @@ import {
 import "./explore.css";
 import { useData } from "../../context";
 
-export const Explore = () => {
+const Explore = () => {
   const {
     dataState: { loading },
     filteredVideos,
@@ -54,3 +54,5 @@ export const Explore = () => {
     </>
   );
 };
+
+export default Explore;

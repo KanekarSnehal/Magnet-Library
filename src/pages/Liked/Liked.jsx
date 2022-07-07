@@ -2,7 +2,7 @@ import React from "react";
 import { useData } from "../../context";
 import { SideBar, VerticalCard } from "../../components";
 
-export const Liked = () => {
+const Liked = () => {
   const {
     dataState: { liked },
   } = useData();
@@ -21,3 +21,5 @@ export const Liked = () => {
     </div>
   );
 };
+
+export default Liked;

@@ -4,7 +4,7 @@ import { SideBar, HorizontalCard } from "../../components";
 import "./history.css";
 import { deleteVideoFromHistory, clearHistory } from "../../services";
 
-export const History = () => {
+const History = () => {
   const {
     dataState: { history },
     dataDispatch,
@@ -39,3 +39,5 @@ export const History = () => {
     </div>
   );
 };
+
+export default History;

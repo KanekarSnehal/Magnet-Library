@@ -4,7 +4,7 @@ import { useAuth } from "../../context/index";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
-export const Profile = () => {
+const Profile = () => {
   const { authState, setAuthState } = useAuth();
   const { authUser } = authState;
   const navigate = useNavigate();
@@ -41,3 +41,5 @@ export const Profile = () => {
     </>
   );
 };
+
+export default Profile;
